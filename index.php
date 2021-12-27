@@ -210,28 +210,48 @@
             <p class="text-dark-custom fs-4">Our wide-ranging experience and knowledge of leading technologies enable us to design electronic products for a wide range of industries. If you don’t see the right category for your project in our industries list here, it is very likely that we can still meet your needs.</p>
         </div>
 <div class="col-12 mb-4">
-  <div class=" row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
+  <div class="row row-cols-1 row-cols-md-6 g-4">
+<div class="col">
   <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
     Link with href
   </a>
+</div>
+<div class="col">
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+    Link with href
+  </a>
+</div>
+<div class="col">
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+    Link with href
+  </a>
+</div>
+<div class="col">
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+    Link with href
+  </a>
+</div>
+<div class="col">
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+    Link with href
+  </a>
+</div>
+<div class="col">
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+    Link with href
+  </a>
+</div>
+<div class="col">
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+    Link with href
+  </a>
+</div>
+  </div>
   <div class="collapse" id="collapse1">
   <div class="card card-body">
     Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
   </div>
 </div>
-</div>
-<div class="col">
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
-    Link with href
-  </a>
-  <div class="collapse" id="collapse2">
-  <div class="card card-body">
-    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-  </div>
-</div>
-</div>
-  </div>
 
     </div>
     <!-- CONTENT -->
