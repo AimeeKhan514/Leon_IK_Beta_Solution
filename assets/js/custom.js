@@ -32,5 +32,21 @@ $(window).scroll(function() {
     }
 });
 /*=========================
-TOP NAVBAR 
+OWL CAROUSEL
 =========================*/
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 25,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+})

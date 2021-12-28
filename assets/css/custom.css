@@ -92,7 +92,7 @@ h6 {
 }
 
 a:hover {
-    color: white !important;
+    color: #84bd00 !important;
 }
 
 .bg-dark-custom {
@@ -279,6 +279,7 @@ body {
     background-color: #333333;
     color: white;
     margin-top: 25px;
+    width: 90%;
 }
 
 #accordionFlushExample .accordion-item {
@@ -300,6 +301,7 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: inset 0 0px 0 transparent;
 }
 
 #accordionFlushExample .accordion-button::after {
@@ -317,4 +319,44 @@ body {
 #accordionFlushExample .accordion-button:not(.collapsed)::after {
     background-image: url('../images/minus-solid.svg');
     transform: rotate(-180deg);
+}
+
+.owl-dots {
+    display: none;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    font-size: 70px;
+    height: 0px;
+    color: #84bd00;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    margin-right: 130px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    margin-left: 130px;
+}
+
+.min-h300 {
+    min-height: 300px;
+}
+
+.bg-img {
+    background-image: url('../images/bottom-bgnd-1920w.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

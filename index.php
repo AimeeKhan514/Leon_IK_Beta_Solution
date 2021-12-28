@@ -11,6 +11,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./assets/css/custom.css">
     <style>
 
@@ -44,7 +47,7 @@
                         <a class="nav-link" href="projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="faq">FAQ</a>
+                        <a class="nav-link" href="faqs">FAQ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact">Contact</a>
@@ -217,6 +220,7 @@
         </div>
 
     </div>
+
     <div class="container-fluid bg-light-custom  p-lg-5 p-3">
         <div class="col-12 my-4">
             <p class="text-dark-custom display-6">Industries</p>
@@ -471,37 +475,408 @@
         </div>
     </div>
     <div class="container-fluid bg-dark-custom3 p-lg-5 p-3">
-    <p class="display-6 text-white mb-3">Have an idea and don't know where to start?</p>
-    <p class="h4 text-success-custom mb-5">Regardless of the size or scope of your Project you’ll always receive the same outstanding level of service from our experienced, efficient team.Beta Solutions endeavour to make getting started on a new R&D project as easy as possible for you, in just 3 steps:
-    </p>
-    <div class="col-12">
-        <div class="row">
-<div class="col-lg-4">
-<div class="accordion accordion-flush" id="accordionFlushExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingOne">
-      <button class="accordion-button collapsed px-5 d-flex fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        <img src="./assets/images/Contact-Us-1920w.png" alt="" class="img-fluid me-5">
-        <span>Contact Us</span>
-      </button>
-    </h2>
-    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-    </div>
-  </div>
-</div>
+        <p class="display-6 text-white mb-3">Have an idea and don't know where to start?</p>
+        <p class="h4 text-success-custom mb-5">Regardless of the size or scope of your Project you’ll always receive the
+            same outstanding level of service from our experienced, efficient team.Beta Solutions endeavour to make
+            getting started on a new R&D project as easy as possible for you, in just 3 steps:
+        </p>
+        <div class="col-12">
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="row">
+                    <div class="col-lg-4 mb-3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed px-5 d-flex fs-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <img src="./assets/images/Contact-Us-1920w.png" alt="" class="img-fluid me-3">
+                                    <span>Contact Us</span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p class="fs-4 mb-3">The start of an innovation partnership.</p>
+                                    <p class="fs-6 mb-3">No matter what stage of development you are in, simply contact
+                                        us to discuss how we can help. We uphold the confidentiality of our clients’
+                                        ideas - and our reputation depends on it. If required, we are happy to sign a
+                                        non-disclosure agreement, which we will prepare for you. This will further
+                                        protect our mutual interests and enable us to more openly discuss the project
+                                        you have in mind.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 mt-5">
+                            <a href="contact"
+                                class="btn-success-custom text-decoration-none fs-5 d-block py-1 text-center">Let's
+                                Innovate
+                                Together</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed px-5 d-flex fs-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"" aria-expanded="
+                                    false" aria-controls="flush-collapseTwo"">
+                                    <img src=" ./assets/images/Discovery-Meeting-1920w.png" alt=""
+                                    class="img-fluid me-3">
+                                    <span>Discovery Meeting</span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo"" class=" accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo"" data-bs-parent=" #accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p class="fs-4 mb-3">A meeting of the minds that gives ideas traction.</p>
+                                    <p class="fs-6 mb-3">An initial face-to-face meeting as your free consultation is
+                                        beneficial to:</p>
+                                    <p class="fs-6 mb-3">
+                                    <ol type="1">
+                                        <li>Establish a solid working relationship;</li>
+                                        <li>Communicate your ideas, requirements, and specifications regarding the
+                                            project in detail;</li>
+                                        <li>Enable us to share about our previous work experiences, relevant
+                                            capabilities, and working practices;</li>
+                                        <li>Determine the best course of action to move the project forward to the next
+                                            stage.</li>
+                                    </ol>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 mt-5">
+                            <a href="about"
+                                class="btn-success-custom text-decoration-none fs-5 d-block py-1 text-center">Learn More
+                                About Us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed px-5 d-flex fs-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <img src="./assets/images/Engage-+-Deliver-1920w.png" alt="" class="img-fluid me-3">
+                                    <span>Engage & Deliver</span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p class="fs-4 mb-3">Our proven development process will provide you with innovative
+                                        and robust solutions.</p>
+                                    <p class="fs-6 mb-3">Depending on the project, we may mutually agree the need for us
+                                        to issue you with a Project Proposal detailing the estimated cost, schedules and
+                                        deliverables. Once you are ready to proceed to the next stage, we will prepare
+                                        an Engagement Letter, bringing further clarity to our working relationship. At
+                                        your acceptance, we can hit the project “go” button!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 mt-5">
+                            <a href="faqs"
+                                class="btn-success-custom text-decoration-none fs-5 d-block py-1 text-center">FAQ's</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+    <div class="container-fluid bg-light-custom p-lg-5 p-3">
+        <div class="col-12 my-4">
+            <p class="text-dark-custom display-6">Projects</p>
+        </div>
+        <div class="col-12 mb-4">
+            <p class="text-dark-custom fs-4 mb-5">Beta Solutions has partnered with many established companies,
+                entrepreneurs and research institutes - working closely together and building strong relationships to
+                design electronic products based on the best technological solutions that will transform our clients’
+                businesses.</p>
+        </div>
+        <div class="col-12 mb-5">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card p-4 border-0 rounded-0">
+                        <img src="./assets/images/Smart+Paint+Switch-1920w.png" class="card-img-top" alt="...">
+                        <div class="card-body px-0">
+                            <a href="" class="text-dark-custom fs-4 mb-5 text-decoration-none">Smart Paint Switch</a>
+                            <span class="badge rounded-pill bg-success-custom small">Case Study</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 my-4 text-center">
+            <a href="projects" class="btn-success-custom text-decoration-none py-3 px-5">See Our Projects</a>
+        </div>
+    </div>
+    <div class="container-fluid p-lg-5 p-3">
+
+        <div class="col-12 mb-4">
+            <p class="text-dark-custom display-6">See why our clients chose us</p>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-5">
+            <div class="col p-2">
+                <div class="card border-0 rounded-0 shadow py-3">
+                    <div class="card-body min-h300">
+                        <h4 class="card-title fw-bold m-0">
+                            <a href="" class="text-decoration-none text-dark-custom">Pete Nelis</a>
+                        </h4>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <p class="text-success-custom">a year ago</p>
+                        <p class="card-text my-3">I had a circuit board that needed a 676 ball FPGA chip replaced. After
+                            some cost analysis, swapping the chip out was considerably cheaper than buying a new board.
+                            So I...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col p-2">
+                <div class="card border-0 rounded-0 shadow py-3">
+                    <div class="card-body min-h300">
+                        <h4 class="card-title fw-bold m-0">
+                            <a href="" class="text-decoration-none text-dark-custom">Ian Barker</a>
+                        </h4>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <p class="text-success-custom">a year ago</p>
+                        <p class="card-text my-3">This team will tell you what you can do rather than what you cant.
+                            With the right expertise and equipment to get the right results. Competitively priced and
+                            able to deliver...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col p-2">
+                <div class="card border-0 rounded-0 shadow py-3">
+                    <div class="card-body min-h300">
+                        <h4 class="card-title fw-bold m-0">
+                            <a href="" class="text-decoration-none text-dark-custom">Jonathan Higgs</a>
+                        </h4>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <p class="text-success-custom">a year ago</p>
+                        <p class="card-text my-3">A massive thanks to Terry and the team at Beta who were able to
+                            resurrect an old device of mine I did not want to get rid of. I reached out...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col p-2">
+                <div class="card border-0 rounded-0 shadow py-3">
+                    <div class="card-body min-h300">
+                        <h4 class="card-title fw-bold m-0">
+                            <a href="" class="text-decoration-none text-dark-custom">Benoit Guieysse</a>
+                        </h4>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <p class="text-success-custom">a year ago</p>
+                        <p class="card-text my-3">I need some urgent help and Beta Solutions Team was very responsive,
+                            helpful, and delivered in a very short time. Thanks again.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col p-2">
+                <div class="card border-0 rounded-0 shadow py-3">
+                    <div class="card-body min-h300">
+                        <h4 class="card-title fw-bold m-0">
+                            <a href="" class="text-decoration-none text-dark-custom">Mike Redman</a>
+                        </h4>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <span class="fas fa-star fs-6 text-success-custom"></span>
+                        <p class="text-success-custom">2 years ago</p>
+                        <p class="card-text my-3">We have worked with Beta Solutions for some years now. They have been
+                            responsible for the electronic firmware development of the Omeo. It has been a challenging
+                            task but they...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 my-4 text-center">
+            <a href="projects" class="btn-success-custom text-decoration-none py-3 px-5">Read all Reviews</a>
+        </div>
+    </div>
+    <div class="container-fluid p-lg-5 p-3">
+
+        <div class="col-12 mb-4">
+            <p class="text-dark-custom display-6">Our Clients</p>
+        </div>
+        <div class="row">
+            <a href="./assets/images/logos/Resene+Logo-1920w.png" class="col-lg-2 col-md-4 p-3 mb-3"
+                data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="./assets/images/logos/Resene+Logo-1920w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Ravensdown-640w.png" data-toggle="lightbox" data-gallery="example-gallery"
+                class="col-lg-2 col-md-4 p-3">
+                <img src="./assets/images/logos/Ravensdown-640w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Resene+Logo-1920w.png" class="col-lg-2 col-md-4 p-3 mb-3"
+                data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="./assets/images/logos/Resene+Logo-1920w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Ravensdown-640w.png" data-toggle="lightbox" data-gallery="example-gallery"
+                class="col-lg-2 col-md-4 p-3">
+                <img src="./assets/images/logos/Ravensdown-640w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Resene+Logo-1920w.png" class="col-lg-2 col-md-4 p-3 mb-3"
+                data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="./assets/images/logos/Resene+Logo-1920w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Ravensdown-640w.png" data-toggle="lightbox" data-gallery="example-gallery"
+                class="col-lg-2 col-md-4 p-3">
+                <img src="./assets/images/logos/Ravensdown-640w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Resene+Logo-1920w.png" class="col-lg-2 col-md-4 p-3 mb-3"
+                data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="./assets/images/logos/Resene+Logo-1920w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Ravensdown-640w.png" data-toggle="lightbox" data-gallery="example-gallery"
+                class="col-lg-2 col-md-4 p-3">
+                <img src="./assets/images/logos/Ravensdown-640w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Resene+Logo-1920w.png" class="col-lg-2 col-md-4 p-3 mb-3"
+                data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="./assets/images/logos/Resene+Logo-1920w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Ravensdown-640w.png" data-toggle="lightbox" data-gallery="example-gallery"
+                class="col-lg-2 col-md-4 p-3">
+                <img src="./assets/images/logos/Ravensdown-640w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Resene+Logo-1920w.png" class="col-lg-2 col-md-4 p-3 mb-3"
+                data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="./assets/images/logos/Resene+Logo-1920w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Ravensdown-640w.png" data-toggle="lightbox" data-gallery="example-gallery"
+                class="col-lg-2 col-md-4 p-3">
+                <img src="./assets/images/logos/Ravensdown-640w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Resene+Logo-1920w.png" class="col-lg-2 col-md-4 p-3 mb-3"
+                data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="./assets/images/logos/Resene+Logo-1920w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Ravensdown-640w.png" data-toggle="lightbox" data-gallery="example-gallery"
+                class="col-lg-2 col-md-4 p-3">
+                <img src="./assets/images/logos/Ravensdown-640w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Resene+Logo-1920w.png" class="col-lg-2 col-md-4 p-3 mb-3"
+                data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="./assets/images/logos/Resene+Logo-1920w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Ravensdown-640w.png" data-toggle="lightbox" data-gallery="example-gallery"
+                class="col-lg-2 col-md-4 p-3">
+                <img src="./assets/images/logos/Ravensdown-640w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Resene+Logo-1920w.png" class="col-lg-2 col-md-4 p-3 mb-3"
+                data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="./assets/images/logos/Resene+Logo-1920w.png" class="img-fluid" alt="">
+            </a>
+            <a href="./assets/images/logos/Ravensdown-640w.png" data-toggle="lightbox" data-gallery="example-gallery"
+                class="col-lg-2 col-md-4 p-3">
+                <img src="./assets/images/logos/Ravensdown-640w.png" class="img-fluid" alt="">
+            </a>
+        </div>
     </div>
     <!-- CONTENT -->
+    <!-- FOOTER SECTION -->
+    <div class="container-fluid mb-5 p-lg-5 p-3 bg-img">
+        <div class="col-12 py-5">
+            <div class="row text-center">
+                <div class="col-md-6 py-5">
+                    <a href="about" class="btn-success-custom text-decoration-none py-3 px-5">Learn More About Us</a>
+                </div>
+                <div class="col-md-6 py-5">
+                    <a href="contact" class="btn-success-custom text-decoration-none py-3 px-5">Let's Innovate
+                        Together</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark-custom p-lg-5 p-3">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="col-12 mb-2">
+                        <a href="about" class="h3 fw-bold text-decoration-none text-success-custom">About</a>
+                    </div>
+                    <div class="col-12">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-1 text-white" href="#">Culture</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-1 text-white" href="#">Facilities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-1 text-white" href="#">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-1 text-white" href="#">Faqs</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="col-12 mb-2">
+                        <a href="about" class="h3 fw-bold text-decoration-none text-success-custom">Services</a>
+                    </div>
+                    <div class="col-12">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-1 text-white" href="#">Electronic Product Design Consulting</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-1 text-white" href="#">Embedded Software & Firmware Development</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-1 text-white" href="#">Electronics & PCB Design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-1 text-white" href="#">PCB & Electronics Prototyping</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-1 text-white" href="#">PCB & Electronic Manufacturing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-1 text-white" href="#">Process</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-1 text-white" href="#">Capabilities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-1 text-white" href="#">Technology</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER SECTION -->
 
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.7.7/dist/index.bundle.min.js"></script>
     <script src="./assets/js/custom.js"></script>
-    <script>
 
+    <script>
     </script>
 </body>
 
