@@ -360,3 +360,15 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.fab.fa-linkedin-in {
+    background: #2867B2;
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+.fab.fa-facebook-f {
+    background: #3A5998;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
