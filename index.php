@@ -186,7 +186,7 @@
         <div class="col-12 mb-4">
             <div class="accordion" id="accordionIndustries">
 
-                <div class="accordion-item col-md-2 rounded-0">
+                <div class="accordion-item col-md-3 py-3 rounded-0">
                     <h2 class="accordion-header" id="headingOne">
                         <div class="col-12 accordion-button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
