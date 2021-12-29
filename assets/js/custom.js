@@ -3,7 +3,7 @@ TOP NAVBAR
 =========================*/
 $(window).scroll(function() {
     $page_scroll = $(document).scrollTop();
-    if ($page_scroll > 100) {
+    if ($page_scroll > 350) {
         $("#navbar").css({
             "position": "fixed",
             "padding": "0px 0px",

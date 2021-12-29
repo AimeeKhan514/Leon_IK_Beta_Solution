@@ -1,71 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php require_once('inc/header.php')?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Aimee khan">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./assets/css/custom.css">
-    <style>
-
-    </style>
-</head>
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand py-0 px-3" href="#">
-                <img src="./assets/images/Beta-Solutions-Logo.svg" alt="" style="height: 92px;" class="img-fluid"
-                    id="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse  bg-dark-custom" id="navbarNav">
-                <ul class="navbar-nav pt_bold text-uppercase">
-                    <li class="nav-item">
-                        <a class="nav-link active-menu" href="index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about-us">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="faqs">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-success-custom" href="javascript:void(0);">Phone +00 0 000 0000</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php require_once('inc/navbar.php')?>
     <!-- NAVBAR -->
+
     <!-- NEWS -->
     <div class="text-dark-custom bg-success-custom text-center py-2">
         <p class="fs-4 fw-light">We are "Approved Research Providers" for the NZ R&D Tax Incentive</p>
     </div>
     <!-- NEWS -->
-    <!-- Image Header -->
+
+    <!-- HERO SECTION -->
     <div class="col-12 bg-dark-custom2 py-5">
         <div class="col-lg-6 mx-auto px-3 mb-3">
             <img src="./assets/images/betasolutions-banner-desktop+(1)-900w.png" alt="" class="img-fluid">
@@ -76,9 +23,11 @@
                 engineering</p>
         </div>
     </div>
-    <!-- Image Header -->
+ <!-- HERO SECTION -->
 
-    <!-- CONTENT -->
+    <!-- MAIN CONTENT -->
+
+     <!-- ABOUT SECTION -->
     <div class="container-fluid p-lg-5 p-3">
 
         <div class="col-12 mb-4">
@@ -220,7 +169,9 @@
         </div>
 
     </div>
+    <!-- ABOUT SECTION -->
 
+        <!-- INDUSTRY SECTION -->
     <div class="container-fluid bg-light-custom  p-lg-5 p-3">
         <div class="col-12 my-4">
             <p class="text-dark-custom display-6">Industries</p>
@@ -474,6 +425,9 @@
             <a href="services" class="btn-lg btn-success-custom text-decoration-none py-3 px-5">See Our Capabilities</a>
         </div>
     </div>
+       <!-- INDUSTRY SECTION -->
+
+          <!-- REACH US SECTION -->
     <div class="container-fluid bg-dark-custom3 p-lg-5 p-3">
         <p class="display-6 text-white mb-3">Have an idea and don't know where to start?</p>
         <p class="h4 text-success-custom mb-5">Regardless of the size or scope of your Project you’ll always receive the
@@ -487,7 +441,7 @@
                     <div class="col-lg-4 mb-3">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed px-5 d-flex fs-4" type="button"
+                                <button class="accordion-button collapsed px-lg-5 ps-5 pe-3 fs-4" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
                                     aria-controls="flush-collapseOne">
                                     <img src="./assets/images/Contact-Us-1920w.png" alt="" class="img-fluid me-3">
@@ -507,7 +461,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-8 mt-5">
+                        <div class="col-lg-8 col-10 mt-lg-5 mt-3">
                             <a href="contact"
                                 class="btn-success-custom text-decoration-none fs-5 d-block py-1 text-center">Let's
                                 Innovate
@@ -517,7 +471,7 @@
                     <div class="col-lg-4 mb-3">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed px-5 d-flex fs-4" type="button"
+                                <button class="accordion-button collapsed px-lg-5 ps-5 pe-3 fs-4" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"" aria-expanded="
                                     false" aria-controls="flush-collapseTwo"">
                                     <img src=" ./assets/images/Discovery-Meeting-1920w.png" alt=""
@@ -545,8 +499,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-8 mt-5">
-                            <a href="about"
+                        <div class="col-10 col-lg-8 mt-lg-5 mt-3">
+                            <a href="about-us"
                                 class="btn-success-custom text-decoration-none fs-5 d-block py-1 text-center">Learn More
                                 About Us</a>
                         </div>
@@ -554,7 +508,7 @@
                     <div class="col-lg-4 mb-3">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingThree">
-                                <button class="accordion-button collapsed px-5 d-flex fs-4" type="button"
+                                <button class="accordion-button collapsed px-lg-5 ps-5 pe-3 fs-4" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
                                     aria-expanded="false" aria-controls="flush-collapseThree">
                                     <img src="./assets/images/Engage-+-Deliver-1920w.png" alt="" class="img-fluid me-3">
@@ -574,7 +528,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-8 mt-5">
+                        <div class="col-10 col-lg-8 mt-3 mt-lg-5">
                             <a href="faqs"
                                 class="btn-success-custom text-decoration-none fs-5 d-block py-1 text-center">FAQ's</a>
                         </div>
@@ -583,7 +537,9 @@
             </div>
         </div>
     </div>
+        <!-- REACH US SECTION -->
 
+                <!-- PROJECTS SECTION -->
     <div class="container-fluid bg-light-custom p-lg-5 p-3">
         <div class="col-12 my-4">
             <p class="text-dark-custom display-6">Projects</p>
@@ -612,6 +568,9 @@
             <a href="projects" class="btn-success-custom text-decoration-none py-3 px-5">See Our Projects</a>
         </div>
     </div>
+       <!-- PROJECTS SECTION -->
+
+          <!-- REVIEWS SECTION -->
     <div class="container-fluid p-lg-5 p-3">
 
         <div class="col-12 mb-4">
@@ -711,6 +670,9 @@
             <a href="projects" class="btn-success-custom text-decoration-none py-3 px-5">Read all Reviews</a>
         </div>
     </div>
+      <!-- REVIEWS SECTION -->
+
+        <!-- CLIENTS SECTION -->
     <div class="container-fluid p-lg-5 p-3">
 
         <div class="col-12 mb-4">
@@ -791,140 +753,18 @@
             </a>
         </div>
     </div>
+          <!-- CLIENTS SECTION -->
+
     <!-- CONTENT -->
-    <!-- FOOTER SECTION -->
-    <div class="container-fluid mb-5 p-lg-5 p-3 bg-img">
-        <div class="col-12 py-5">
-            <div class="row text-center">
-                <div class="col-md-6 py-5">
-                    <a href="about" class="btn-success-custom text-decoration-none py-3 px-5">Learn More About Us</a>
-                </div>
-                <div class="col-md-6 py-5">
-                    <a href="contact" class="btn-success-custom text-decoration-none py-3 px-5">Let's Innovate
-                        Together</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid bg-dark-custom p-lg-5 p-3">
-        <div class="row py-3">
-            <div class="col-md-5">
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <div class="col-12 mb-2">
-                            <a href="about" class="h3 fw-bold text-decoration-none text-success-custom">About</a>
-                        </div>
-                        <div class="col-12">
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                    <a class="nav-link px-0 py-1 text-white" href="#">Culture</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-0 py-1 text-white" href="#">Facilities</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-0 py-1 text-white" href="#">Team</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-0 py-1 text-white" href="#">Faqs</a>
-                                </li>
-                            </ul>
-                        </div>
 
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="col-12 mb-2">
-                            <a href="about" class="h3 fw-bold text-decoration-none text-success-custom">Services</a>
-                        </div>
-                        <div class="col-12">
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                    <a class="nav-link px-0 py-1 text-white" href="#">Electronic Product Design
-                                        Consulting</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-0 py-1 text-white" href="#">Embedded Software & Firmware
-                                        Development</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-0 py-1 text-white" href="#">Electronics & PCB Design</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-0 py-1 text-white" href="#">PCB & Electronics Prototyping</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-0 py-1 text-white" href="#">PCB & Electronic Manufacturing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-0 py-1 text-white" href="#">Process</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-0 py-1 text-white" href="#">Capabilities</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-0 py-1 text-white" href="#">Technology</a>
-                                </li>
-                            </ul>
-                        </div>
+    <!-- BOTTOM HERO SECTION -->
+    <?php require_once('inc/bottom-hero-section.php')?>
+    <!-- BOTTOM HERO SECTION -->
 
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5 ms-auto">
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <div class="col-12 mb-2">
-                            <a href="about" class="h3 fw-bold text-decoration-none text-success-custom">Follow Us</a>
-                        </div>
-                        <div class="col-12">
-                            <a class="text-white text-decoration-none fs-3" href="#">
-                                <span class="fab fa-linkedin-in"></span>
-                            </a>
-                            <a class="text-white text-decoration-none fs-3" href="#">
-                                <span class="fab fa-facebook-f"></span>
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="col-12 mb-4">
-                            <a href="contact"
-                                class="btn-success-custom fs-4 btn-lg  text-decoration-none py-3 px-5">Free
-                                Consultation</a>
-                        </div>
-                        <div class="col-12 text-center">
-                            <p class="fs-5 text-white"><span class="text-success-custom">IT'S ON US,</span> JUST
-                                CALL<br>Phone <span class="text-success-custom">+64 6 280 2830</span></p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12">
-            <ul class="nav justify-content-center fs-5">
-                <li class="nav-item">
-                    <a class="nav-link  text-white text-decoration-underline" href="#">Privacy</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white text-decoration-underline" href="#">SiteMap</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#"> © <?php echo date("Y")?></a>
-                </li>
-            </ul>
-        </div>
-    </div>
+ <!-- FOOTER SECTION -->
+ <?php require_once('inc/footer.php')?>
     <!-- FOOTER SECTION -->
 
-    <script src="./assets/js/jquery.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.7.7/dist/index.bundle.min.js"></script>
-    <script src="./assets/js/custom.js"></script>
-
-    <script>
-    </script>
-</body>
-
-</html>
+       <!-- SCRIPTS SECTION -->
+       <?php require_once('inc/bottom.php')?>
+             <!-- SCRIPTS SECTION -->

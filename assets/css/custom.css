@@ -127,6 +127,10 @@ a:hover {
     color: #84bd00 !important;
 }
 
+.bg-success-custom-transparent {
+    background-color: rgba(132, 189, 0, 0.7) !important;
+}
+
 .bg-light-custom {
     background-color: #eee!important;
 }
@@ -176,6 +180,10 @@ body {
     z-index: 999;
 }
 
+#logo {
+    height: 92px;
+}
+
 .navbar .nav-item {
     padding: 20px 25px;
 }
@@ -203,8 +211,11 @@ body {
 }
 
 @media screen and (max-width:768px) {
-    .navbar {
+    /* .navbar {
         padding: 10px 0px 0px 0px !important;
+    } */
+    #logo {
+        height: 60px !important;
     }
 }
 
@@ -354,7 +365,8 @@ body {
     min-height: 300px;
 }
 
-.bg-img {
+.bg-img,
+.full-bg-img {
     background-image: url('../images/bottom-bgnd-1920w.jpg');
     background-size: cover;
     background-position: center;
@@ -371,4 +383,17 @@ body {
     background: #3A5998;
     padding: 10px 15px;
     border-radius: 10px;
+}
+
+.ul {
+    list-style: none;
+}
+
+.ul li::before {
+    content: "\2022";
+    color: #84bd00;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
