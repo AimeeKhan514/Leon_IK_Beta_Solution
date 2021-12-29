@@ -31,9 +31,6 @@ $(window).scroll(function() {
         });
     }
 });
-/*=========================
-OWL CAROUSEL
-=========================*/
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 25,
@@ -49,4 +46,8 @@ $('.owl-carousel').owlCarousel({
             items: 4
         }
     }
-})
+});
+
+/*=========================
+BOOTSTRAP FORM VALIDATION
+=========================*/

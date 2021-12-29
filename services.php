@@ -52,7 +52,7 @@
     <div class="container-fluid p-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 px-lg-5">
+                <div class="col-lg-6 px-lg-5 mb-3">
                     <div class="col-11 mb-4">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
@@ -60,10 +60,10 @@
                             </div>
                             <div class="flex-grow-1 ms-4">
                                 <a href="javascript:void(0);" class="text-dark-custom fs-3">Product R&D Consulting</a>
-                                <p class="text-secondary mt-3">Our experienced team of engineers can provide you with a
+                                <p class="text-secondary my-2">Our experienced team of engineers can provide you with a
                                     range of specialist consulting services for your unique project requirements. We
                                     offer sound technical advice, complete ground-up designs, and everything in between
-                                    - <br>including:</p>
+                                    - including:</p>
                                 <ul class="ul text-secondary fs-6">
                                     <li>Reliability analysis</li>
                                     <li>Design reviews</li>
@@ -71,6 +71,111 @@
                                     <li>Cost reduction</li>
                                     <li>Production consulting</li>
                                     <li>Diagnostics and testing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-lg-5 mb-3">
+                    <div class="col-11 mb-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <img src="./assets/images/Embedded-Software-Design-60w.jpeg" alt="...">
+                            </div>
+                            <div class="flex-grow-1 ms-4">
+                                <a href="javascript:void(0);" class="text-dark-custom fs-3">Embedded Software Design</a>
+                                <p class="text-secondary my-2">The majority of modern electronics require a specialist software component. We have the skills and proven track record to design and develop the embedded software (or "firmware") for your project. We can provide firmware to cater for:</p>
+                                <ul class="ul text-secondary fs-6">
+                                    <li>Low power consumption</li>
+                                    <li>Fault tolerance</li>
+                                    <li>Specialist signal processing</li>
+                                    <li>Custom hardware interfaces</li>
+                                    <li>FPGA design</li>
+                                    <li>Wireless/IoT Solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-lg-5 mb-3">
+                    <div class="col-11 mb-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <img src="./assets/images/Electronic-and-PCB-Design-60w.jpeg" alt="...">
+                            </div>
+                            <div class="flex-grow-1 ms-4">
+                                <a href="javascript:void(0);" class="text-dark-custom fs-3">Electronic and PCB Design</a>
+                                <p class="text-secondary my-2">Our qualified engineers can supply you with innovative, custom-designed electronic solutions for your products. With over 10 years of experience and using the latest specialist Altium PCB Design CAD software - we have the validated ability to deliver:</p>
+                                <ul class="ul text-secondary fs-6">
+                                    <li>System architectures</li>
+                                    <li>Circuit simulations</li>
+                                    <li>Schematics & PCBs</li>
+                                    <li>Design for compliance</li>
+                                    <li>Bill of materials</li>
+                                    <li>Production docs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-lg-5 mb-3">
+                    <div class="col-11 mb-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <img src="./assets/images/Electro_Mechanical-Design--60w.jpeg" alt="...">
+                            </div>
+                            <div class="flex-grow-1 ms-4">
+                                <a href="javascript:void(0);" class="text-dark-custom fs-3">Electro-Mechanical Design</a>
+                                <p class="text-secondary my-2">Internal collaboration between our specialist engineers means we can deliver integrated electro-mechanical solutions. Using the very latest specialist Solidworks CAD software, we can provide a range of mechanical services including:</p>
+                                <ul class="ul text-secondary fs-6">
+                                    <li>Enclosure design & PCB integration</li>
+                                    <li>Design for manufacturing</li>
+                                    <li>Materials research</li>
+                                    <li>Engineering drawings</li>
+                                    <li>3D CAD models</li>
+                                    <li>3D printing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-lg-5 mb-3">
+                    <div class="col-11 mb-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <img src="./assets/images/Prototyping--60w.jpeg" alt="...">
+                            </div>
+                            <div class="flex-grow-1 ms-4">
+                                <a href="javascript:void(0);" class="text-dark-custom fs-3">Prototyping</a>
+                                <p class="text-secondary my-2">Rapid prototyping is often key to the success of a project, and we have the expertise and resources on site to produce the prototypes required for your project. From proof-of-concepts to full working production-ready models we are equipped to provide:</p>
+                                <ul class="ul text-secondary fs-6">
+                                    <li>Quick turnaround PCBs</li>
+                                    <li>In house electronics assembly</li>
+                                    <li>3D printed models</li>
+                                    <li>Cables design and assembly</li>
+                                    <li>Components procurement</li>
+                                    <li>Production costing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-lg-5 mb-3">
+                    <div class="col-11 mb-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <img src="./assets/images/Production-Manufacturing-60w.jpeg" alt="...">
+                            </div>
+                            <div class="flex-grow-1 ms-4">
+                                <a href="javascript:void(0);" class="text-dark-custom fs-3">Production Manufacturing</a>
+                                <p class="text-secondary my-2">The team at Beta Solutions has both the in-house technical resources, and a trusted network of local and international suppliers - built up over years of collaboration - to deliver your product on an ongoing basis. We can offer:</p>
+                                <ul class="ul text-secondary fs-6">
+                                    <li>In-house low-vol production</li>
+                                    <li>Outsourced high-vol production</li>
+                                    <li>Final assembly</li>
+                                    <li>Validation and testing</li>
+                                    <li>Quality control</li>
+                                    <li>Quality Responsive</li>
                                 </ul>
                             </div>
                         </div>
@@ -89,25 +194,15 @@
             <div class="row">
                 <div class="col-lg-6 py-lg-5 p-3">
                     <div class="col-lg-10 mb-4">
-                        <p class="text-white display-6">The success of our business is built on 5 core values</p>
+                        <p class="text-white display-6">Our tried and tested process is enabling and flexible, without compromising quality standards.</p>
                     </div>
 
-                    <div class="col-lg-10 mb-4">
-                        <p class="text-secondary fs-3">
-                            <span>Integrity</span>
-                            <span><span class="fas fa-circle" style="font-size: 2px;"></span> Relationships</span>
-                            <span><span class="fas fa-circle" style="font-size: 2px;"></span> Excellence</span>
-                            <span><span class="fas fa-circle" style="font-size: 2px;"></span> Innovation</span>
-                            <span><span class="fas fa-circle" style="font-size: 2px;"></span> Enjoyment</span>
-                    </div>
                     <div class="col-12 pt-5 mb-4">
-                        <a href="contact" class="btn-lg btn-success-custom text-decoration-none py-3 px-5">Learn About
-                            Our
-                            Values</a>
+                        <a href="contact" class="btn-lg btn-success-custom text-decoration-none py-3 px-5">Follow Our Process</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="./assets/images/93-698w.jpeg" class="img-fluid" alt="">
+                    <img src="./assets/images/101-698w.jpeg" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
@@ -117,16 +212,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 px-lg-5 order-lg-1 order-2">
-                    <img src="./assets/images/93-698w.jpeg" class="img-fluid" alt="">
+                    <img src="./assets/images/102-698w.jpeg" class="img-fluid" alt="">
                 </div>
-                <div class="col-lg-6 p-lg-5 p-3 order-lg-2 order-1">
-                    <div class="col-lg-10 mb-4">
-                        <p class="text-dark-custom display-6">An inspiring space that mixes hi-tech engineering with a
-                            friendly, café-style feel.</p>
+                <div class="col-lg-6 pt-lg-5 pt-3 px-lg-5 px-3 order-lg-2 order-1">
+                    <div class="col-lg-12 mb-4">
+                        <p class="text-dark-custom display-6">
+A partnership with industry specialists who have proven track records and a wealth of skills and experience.</p>
                     </div>
-                    <div class="col-12 py-5">
-                        <a href="contact" class="btn-lg btn-success-custom text-decoration-none py-3 px-5">Tour Our
-                            Facilities</a>
+                    <div class="col-12 pt-3">
+                        <a href="contact" class="btn-lg btn-success-custom text-decoration-none py-3 px-5">See Our Capabilities</a>
                     </div>
                 </div>
 
@@ -150,21 +244,4 @@
     <!-- SCRIPTS SECTION -->
     <?php require_once('inc/bottom.php')?>
     <!-- SCRIPTS SECTION -->
-    <script>
-    $(document).ready(function() {
-        autoPlayYouTubeModal();
-    });
-    // Get and autoplay Video from data
-    function autoPlayYouTubeModal() {
-        var triggerOpen = $("body").find('[data-tagVideo]');
-        triggerOpen.click(function() {
-            var theModal = $(this).data("bs-target"),
-                videoSRC = $(this).attr("data-tagVideo"),
-                videoSRCauto = videoSRC + "?autoplay=1";
-            $(theModal + ' iframe').attr('src', videoSRCauto);
-            $(theModal + ' button.btn-close').click(function() {
-                $(theModal + ' iframe').attr('src', videoSRC);
-            });
-        });
-    }
-    </script>
+  

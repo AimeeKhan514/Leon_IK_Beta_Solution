@@ -86,7 +86,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 px-lg-5 order-lg-1 order-2">
-                <img src="./assets/images/93-698w.jpeg" class="img-fluid" alt="">
+                <img src="./assets/images/107-698w.jpeg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 p-lg-5 p-3 order-lg-2 order-1">
                 <div class="col-lg-10 mb-4">

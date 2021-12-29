@@ -23,11 +23,11 @@
                 engineering</p>
         </div>
     </div>
- <!-- HERO SECTION -->
+    <!-- HERO SECTION -->
 
     <!-- MAIN CONTENT -->
 
-     <!-- ABOUT SECTION -->
+    <!-- ABOUT SECTION -->
     <div class="container-fluid p-lg-5 p-3">
 
         <div class="col-12 mb-4">
@@ -171,7 +171,7 @@
     </div>
     <!-- ABOUT SECTION -->
 
-        <!-- INDUSTRY SECTION -->
+    <!-- INDUSTRY SECTION -->
     <div class="container-fluid bg-light-custom  p-lg-5 p-3">
         <div class="col-12 my-4">
             <p class="text-dark-custom display-6">Industries</p>
@@ -184,6 +184,35 @@
                 your project in our industries list here, it is very likely that we can still meet your needs.</p>
         </div>
         <div class="col-12 mb-4">
+            <div class="accordion" id="accordionIndustries">
+
+                <div class="accordion-item col-md-2 rounded-0">
+                    <h2 class="accordion-header" id="headingOne">
+                        <div class="col-12 accordion-button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="col-12 text-center">
+                                
+                            <img src="./assets/images/Agritech-1920w.PNG" alt="">
+                            <h4 class="text-dark-custom fw-bold my-2">Agritech</h4>
+                        </div>
+                        </div>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionIndustries">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
             <ul class="nav nav-tabs row row-cols-1 row-cols-md-6 g-0 border-bottom-0" id="myTab" role="tablist">
                 <li class="nav-item col-md-2" role="presentation">
                     <button class="nav-link p-3 col-12" id="Agritech-tab" data-bs-toggle="tab"
@@ -425,9 +454,9 @@
             <a href="services" class="btn-lg btn-success-custom text-decoration-none py-3 px-5">See Our Capabilities</a>
         </div>
     </div>
-       <!-- INDUSTRY SECTION -->
+    <!-- INDUSTRY SECTION -->
 
-          <!-- REACH US SECTION -->
+    <!-- REACH US SECTION -->
     <div class="container-fluid bg-dark-custom3 p-lg-5 p-3">
         <p class="display-6 text-white mb-3">Have an idea and don't know where to start?</p>
         <p class="h4 text-success-custom mb-5">Regardless of the size or scope of your Project you’ll always receive the
@@ -537,9 +566,9 @@
             </div>
         </div>
     </div>
-        <!-- REACH US SECTION -->
+    <!-- REACH US SECTION -->
 
-                <!-- PROJECTS SECTION -->
+    <!-- PROJECTS SECTION -->
     <div class="container-fluid bg-light-custom p-lg-5 p-3">
         <div class="col-12 my-4">
             <p class="text-dark-custom display-6">Projects</p>
@@ -568,9 +597,9 @@
             <a href="projects" class="btn-success-custom text-decoration-none py-3 px-5">See Our Projects</a>
         </div>
     </div>
-       <!-- PROJECTS SECTION -->
+    <!-- PROJECTS SECTION -->
 
-          <!-- REVIEWS SECTION -->
+    <!-- REVIEWS SECTION -->
     <div class="container-fluid p-lg-5 p-3">
 
         <div class="col-12 mb-4">
@@ -670,9 +699,9 @@
             <a href="projects" class="btn-success-custom text-decoration-none py-3 px-5">Read all Reviews</a>
         </div>
     </div>
-      <!-- REVIEWS SECTION -->
+    <!-- REVIEWS SECTION -->
 
-        <!-- CLIENTS SECTION -->
+    <!-- CLIENTS SECTION -->
     <div class="container-fluid p-lg-5 p-3">
 
         <div class="col-12 mb-4">
@@ -753,7 +782,7 @@
             </a>
         </div>
     </div>
-          <!-- CLIENTS SECTION -->
+    <!-- CLIENTS SECTION -->
 
     <!-- CONTENT -->
 
@@ -761,10 +790,10 @@
     <?php require_once('inc/bottom-hero-section.php')?>
     <!-- BOTTOM HERO SECTION -->
 
- <!-- FOOTER SECTION -->
- <?php require_once('inc/footer.php')?>
+    <!-- FOOTER SECTION -->
+    <?php require_once('inc/footer.php')?>
     <!-- FOOTER SECTION -->
 
-       <!-- SCRIPTS SECTION -->
-       <?php require_once('inc/bottom.php')?>
-             <!-- SCRIPTS SECTION -->
+    <!-- SCRIPTS SECTION -->
+    <?php require_once('inc/bottom.php')?>
+    <!-- SCRIPTS SECTION -->
