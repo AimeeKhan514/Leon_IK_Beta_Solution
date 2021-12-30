@@ -105,5 +105,10 @@
                     <a class="nav-link text-white" href="#"> © <?php echo date("Y")?></a>
                 </li>
             </ul>
+
+            <p class="text-end">
+                <a href="javascript:void(0);" onclick="window.scrollTo({ top: 0, behavior: 'smooth'});" class="fs-1 text-success-custom"><span class="fas fa-chevron-circle-up"></span></a>
+            </p>
+
         </div>
     </div>

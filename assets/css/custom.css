@@ -188,26 +188,21 @@ body {
     padding: 20px 25px;
 }
 
-.navbar .nav-item:hover {
+.navbar .nav-item:hover,
+.active-li,
+.active-menu {
     background-color: #84bd00 !important;
     color: white !important;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .navbar .nav-item .nav-link:hover {
     color: white !important;
 }
 
-.navbar .nav-item:hover .nav-link {
-    color: white !important;
-}
-
 .navbar .nav-item .nav-link {
     color: white;
-}
-
-.active-menu {
-    color: #84bd00 !important;
-    border-bottom: 2px solid #84bd00;
 }
 
 @media screen and (max-width:768px) {
@@ -332,18 +327,18 @@ body {
     transform: rotate(-180deg);
 }
 
-.owl-dots {
+#owl-carousel-projects .owl-dots {
     display: none;
 }
 
-.owl-theme .owl-nav {
+#owl-carousel-projects .owl-theme .owl-nav {
     margin-top: 10px;
     font-size: 70px;
     height: 0px;
     color: #84bd00;
 }
 
-.owl-carousel .owl-nav button.owl-prev {
+#owl-carousel-projects .owl-carousel .owl-nav button.owl-prev {
     background: 0 0;
     color: inherit;
     border: none;
@@ -352,13 +347,18 @@ body {
     margin-right: 130px;
 }
 
-.owl-carousel .owl-nav button.owl-next {
+#owl-carousel-projects .owl-carousel .owl-nav button.owl-next {
     background: 0 0;
     color: inherit;
     border: none;
     padding: 0!important;
     font: inherit;
     margin-left: 130px;
+}
+
+#owl-carousel-reviews .owl-dots,
+#owl-carousel-reviews .owl-nav {
+    display: none !important;
 }
 
 .min-h300 {
@@ -389,13 +389,30 @@ body {
     list-style: none;
 }
 
-.ul li::before {
+.ul li::before,
+.ul li>ul li::before {
     content: "\2022";
     color: #84bd00;
     font-weight: bold;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+}
+
+.ul li>ul li::before {
+    content: "";
+}
+
+#accordionIndustries .accordion-body {
+    background-color: white !important;
+    outline: 1px solid black !important;
+    border-radius: 0px !important;
+}
+
+#accordionIndustries .accordion-button {
+    background-color: transparent !important;
+    padding: 35px 0px !important;
+    border-radius: 0px !important;
 }
 
 #accordionIndustries .accordion-button::after {
@@ -411,4 +428,16 @@ body {
 #accordionIndustries .accordion-item {
     background-color: transparent;
     border: 1px solid transparent;
+}
+
+#accordionIndustries .accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 0px;
+}
+
+#accordionIndustries .accordion-button:hover,
+#accordionIndustries .accordion-button[aria-expanded="true"] {
+    background-color: white !important;
+    padding: 35px 0px !important;
+    outline: 1px solid black !important;
+    border-radius: 0px !important;
 }

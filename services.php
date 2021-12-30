@@ -84,7 +84,10 @@
                             </div>
                             <div class="flex-grow-1 ms-4">
                                 <a href="javascript:void(0);" class="text-dark-custom fs-3">Embedded Software Design</a>
-                                <p class="text-secondary my-2">The majority of modern electronics require a specialist software component. We have the skills and proven track record to design and develop the embedded software (or "firmware") for your project. We can provide firmware to cater for:</p>
+                                <p class="text-secondary my-2">The majority of modern electronics require a specialist
+                                    software component. We have the skills and proven track record to design and develop
+                                    the embedded software (or "firmware") for your project. We can provide firmware to
+                                    cater for:</p>
                                 <ul class="ul text-secondary fs-6">
                                     <li>Low power consumption</li>
                                     <li>Fault tolerance</li>
@@ -104,8 +107,12 @@
                                 <img src="./assets/images/Electronic-and-PCB-Design-60w.jpeg" alt="...">
                             </div>
                             <div class="flex-grow-1 ms-4">
-                                <a href="javascript:void(0);" class="text-dark-custom fs-3">Electronic and PCB Design</a>
-                                <p class="text-secondary my-2">Our qualified engineers can supply you with innovative, custom-designed electronic solutions for your products. With over 10 years of experience and using the latest specialist Altium PCB Design CAD software - we have the validated ability to deliver:</p>
+                                <a href="javascript:void(0);" class="text-dark-custom fs-3">Electronic and PCB
+                                    Design</a>
+                                <p class="text-secondary my-2">Our qualified engineers can supply you with innovative,
+                                    custom-designed electronic solutions for your products. With over 10 years of
+                                    experience and using the latest specialist Altium PCB Design CAD software - we have
+                                    the validated ability to deliver:</p>
                                 <ul class="ul text-secondary fs-6">
                                     <li>System architectures</li>
                                     <li>Circuit simulations</li>
@@ -125,8 +132,12 @@
                                 <img src="./assets/images/Electro_Mechanical-Design--60w.jpeg" alt="...">
                             </div>
                             <div class="flex-grow-1 ms-4">
-                                <a href="javascript:void(0);" class="text-dark-custom fs-3">Electro-Mechanical Design</a>
-                                <p class="text-secondary my-2">Internal collaboration between our specialist engineers means we can deliver integrated electro-mechanical solutions. Using the very latest specialist Solidworks CAD software, we can provide a range of mechanical services including:</p>
+                                <a href="javascript:void(0);" class="text-dark-custom fs-3">Electro-Mechanical
+                                    Design</a>
+                                <p class="text-secondary my-2">Internal collaboration between our specialist engineers
+                                    means we can deliver integrated electro-mechanical solutions. Using the very latest
+                                    specialist Solidworks CAD software, we can provide a range of mechanical services
+                                    including:</p>
                                 <ul class="ul text-secondary fs-6">
                                     <li>Enclosure design & PCB integration</li>
                                     <li>Design for manufacturing</li>
@@ -147,7 +158,10 @@
                             </div>
                             <div class="flex-grow-1 ms-4">
                                 <a href="javascript:void(0);" class="text-dark-custom fs-3">Prototyping</a>
-                                <p class="text-secondary my-2">Rapid prototyping is often key to the success of a project, and we have the expertise and resources on site to produce the prototypes required for your project. From proof-of-concepts to full working production-ready models we are equipped to provide:</p>
+                                <p class="text-secondary my-2">Rapid prototyping is often key to the success of a
+                                    project, and we have the expertise and resources on site to produce the prototypes
+                                    required for your project. From proof-of-concepts to full working production-ready
+                                    models we are equipped to provide:</p>
                                 <ul class="ul text-secondary fs-6">
                                     <li>Quick turnaround PCBs</li>
                                     <li>In house electronics assembly</li>
@@ -168,7 +182,10 @@
                             </div>
                             <div class="flex-grow-1 ms-4">
                                 <a href="javascript:void(0);" class="text-dark-custom fs-3">Production Manufacturing</a>
-                                <p class="text-secondary my-2">The team at Beta Solutions has both the in-house technical resources, and a trusted network of local and international suppliers - built up over years of collaboration - to deliver your product on an ongoing basis. We can offer:</p>
+                                <p class="text-secondary my-2">The team at Beta Solutions has both the in-house
+                                    technical resources, and a trusted network of local and international suppliers -
+                                    built up over years of collaboration - to deliver your product on an ongoing basis.
+                                    We can offer:</p>
                                 <ul class="ul text-secondary fs-6">
                                     <li>In-house low-vol production</li>
                                     <li>Outsourced high-vol production</li>
@@ -194,11 +211,13 @@
             <div class="row">
                 <div class="col-lg-6 py-lg-5 p-3">
                     <div class="col-lg-10 mb-4">
-                        <p class="text-white display-6">Our tried and tested process is enabling and flexible, without compromising quality standards.</p>
+                        <p class="text-white display-6">Our tried and tested process is enabling and flexible, without
+                            compromising quality standards.</p>
                     </div>
 
                     <div class="col-12 pt-5 mb-4">
-                        <a href="contact" class="btn-lg btn-success-custom text-decoration-none py-3 px-5">Follow Our Process</a>
+                        <a href="contact" class="btn-lg btn-success-custom text-decoration-none py-3 px-5">Follow Our
+                            Process</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -217,10 +236,12 @@
                 <div class="col-lg-6 pt-lg-5 pt-3 px-lg-5 px-3 order-lg-2 order-1">
                     <div class="col-lg-12 mb-4">
                         <p class="text-dark-custom display-6">
-A partnership with industry specialists who have proven track records and a wealth of skills and experience.</p>
+                            A partnership with industry specialists who have proven track records and a wealth of skills
+                            and experience.</p>
                     </div>
                     <div class="col-12 pt-3">
-                        <a href="contact" class="btn-lg btn-success-custom text-decoration-none py-3 px-5">See Our Capabilities</a>
+                        <a href="contact" class="btn-lg btn-success-custom text-decoration-none py-3 px-5">See Our
+                            Capabilities</a>
                     </div>
                 </div>
 
@@ -244,4 +265,3 @@ A partnership with industry specialists who have proven track records and a weal
     <!-- SCRIPTS SECTION -->
     <?php require_once('inc/bottom.php')?>
     <!-- SCRIPTS SECTION -->
-  

@@ -1,9 +1,9 @@
-<?php require_once('inc/header.php')?>
+<?php require_once('inc/header.php') ?>
 
 
 <body>
     <!-- NAVBAR -->
-    <?php require_once('inc/navbar.php')?>
+    <?php require_once('inc/navbar.php') ?>
     <!-- NAVBAR -->
 
     <!-- NEWS -->
@@ -49,7 +49,7 @@
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     <img src="./assets/images/Concept-to-Commercialisation-92129363-1920w.png" alt=""
                                         class="img-fluid me-3">
@@ -67,7 +67,7 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     <img src="./assets/images/Specialised-and-Validated-Capabilities-1920w.png" alt=""
                                         class="img-fluid me-3">
@@ -86,7 +86,7 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     <img src="./assets/images/Electronic-Research-and-Development-1920w.png" alt=""
                                         class="img-fluid me-3">
@@ -103,7 +103,7 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     <img src="./assets/images/Rapid-Product-Development-1920w.png" alt=""
                                         class="img-fluid me-3">
@@ -121,7 +121,7 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                     <img src="./assets/images/Product-Development-Consulting-1920w.png" alt=""
                                         class="img-fluid me-3">
@@ -140,7 +140,7 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingSix">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                     <img src="./assets/images/Product-Manufacturing-1920w.png" alt=""
                                         class="img-fluid me-3">
@@ -160,7 +160,7 @@
                 </div>
                 <div class="col-lg-6 mb-3 ps-md-3 d-flex justify-content-center align-items-center">
                     <video src="./assets/videos/Electronic Design - Product Development Company - Beta Solutions NZ.mp4"
-                        controls loop class="img-fluid"></video>
+                        controls loop autoplay muted class="img-fluid"></video>
                 </div>
             </div>
         </div>
@@ -184,272 +184,501 @@
                 your project in our industries list here, it is very likely that we can still meet your needs.</p>
         </div>
         <div class="col-12 mb-4">
-            <div class="accordion" id="accordionIndustries">
+            <div class="accordion row row-cols-lg-4 row-cols-md-3 row-cols-1" id="accordionIndustries">
 
-                <div class="accordion-item col-md-3 py-3 rounded-0">
-                    <h2 class="accordion-header" id="headingOne">
+                <div class="accordion-item col py-3 rounded-0">
+                    <h2 class="accordion-header" id="headingAgritech">
                         <div class="col-12 accordion-button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            data-bs-target="#collapseAgritech" aria-expanded="false" aria-controls="collapseAgritech">
                             <div class="col-12 text-center">
-                                
-                            <img src="./assets/images/Agritech-1920w.PNG" alt="">
-                            <h4 class="text-dark-custom fw-bold my-2">Agritech</h4>
-                        </div>
+
+                                <img src="./assets/images/Agritech-1920w.PNG" alt="">
+                                <h4 class="text-dark-custom fw-bold my-2">Agritech</h4>
+                            </div>
                         </div>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionIndustries">
-                        <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                    <div id="collapseAgritech" class="accordion-collapse collapse" aria-labelledby="headingAgritech"
+                        data-bs-parent="#accordionAgritech">
+                        <div class="accordion-body h5 text-secondary">
+                            <p class="mb-3">Agritech is the use of technology in agriculture for the purposes of
+                                improving
+                                economic, environmental or social factors.</p>
+
+
+                            <p class="mb-3"> We have designed IoT Fuel Monitoring Devices which intelligently sense and
+                                communicate the fuel volume within a storage tank. This data can be supplied to the fuel
+                                delivery companies who can (i) optimise their delivery routes and (ii) ensure the user
+                                never
+                                runs out of fuel.</p>
+
+
+                            <p class="mb-3"> Smart LED lighting arrays for horticulture; electric fence monitoring
+                                systems; and
+                                health & safety monitoring devices are just some of the other Agritech products we have
+                                developed for our clients.</p>
+
+
+                            <p class="mb-3">How can AgriTech benefit your business? Get in touch with us today to find
+                                out how Beta
+                                Solutions can turn your idea into a reality.</p>
+
+
                         </div>
                     </div>
                 </div>
+                <div class="accordion-item col py-3 rounded-0">
+                    <h2 class="accordion-header" id="headingAssistive-Device">
+                        <div class="col-12 accordion-button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseAssistive-Device" aria-expanded="false"
+                            aria-controls="collapseAssistive-Device">
+                            <div class="col-12 text-center">
 
+                                <img src="./assets/images/Assistive+Devices-1920w.png" alt="">
+                                <h4 class="text-dark-custom fw-bold my-2">Assistive Device</h4>
+                            </div>
+                        </div>
+                    </h2>
+                    <div id="collapseAssistive-Device" class="accordion-collapse collapse"
+                        aria-labelledby="headingAssistive-Device" data-bs-parent="#accordionAssistive-Device">
+                        <div class="accordion-body h5 text-secondary">
+                            <p class="mb-3">Assistive technology is a term that includes assistive, adaptive, and
+                                rehabilitative devices used for improving people's lives.</p>
+
+
+                            <p class="mb-3"> Beta Solutions is committed to harnessing the benefits of the latest
+                                technology and utilising it for developing tools for the purposes of improving people’s
+                                lives. We have
+                                developed a number of assistive devices over the years, including miniaturized motor
+                                controllers
+                                for prosthetic hands. </p>
+
+
+                            <p class="mb-3">Please contact a member of our development team to discuss how we can help
+                                unlock
+                                technological solutions for your Assistive Device needs.</p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item col py-3 rounded-0">
+                    <h2 class="accordion-header" id="headingConsumer">
+                        <div class="col-12 accordion-button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseConsumer" aria-expanded="false" aria-controls="collapseConsumer">
+                            <div class="col-12 text-center">
+
+                                <img src="./assets/images/Consumer-1920w.png" alt="">
+                                <h4 class="text-dark-custom fw-bold my-2">Consumer</h4>
+                            </div>
+                        </div>
+                    </h2>
+                    <div id="collapseConsumer" class="accordion-collapse collapse" aria-labelledby="headingConsumer"
+                        data-bs-parent="#accordionConsumer">
+                        <div class="accordion-body h5 text-secondary">
+                            <p class="mb-3">Many of our clients choose to work with us because we have extensive
+                                experience
+                                developing products and working with technologies from a wide range of market segments
+                                that can
+                                apply to consumer products.</p>
+                            <p class="mb-3">For example, we have applied our Scientific Instrumentation skills and
+                                expertise in
+                                developing a fully certified consumer smart wall-switch product. While the product uses
+                                advanced
+                                behind-the-scenes complex signal processing, from the consumers’ perspective the product
+                                seamlessly connects to their Smartphone App to effortlessly control their household
+                                lighting.
+                            </p>
+
+                            <p class="mb-3">We can work with you to develop concepts, working prototypes and fully
+                                fledged consumer
+                                products that are ready for production.</p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item col py-3 rounded-0">
+                    <h2 class="accordion-header" id="headingIndustrial">
+                        <div class="col-12 accordion-button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseIndustrial" aria-expanded="false"
+                            aria-controls="collapseIndustrial">
+                            <div class="col-12 text-center">
+
+                                <img src="./assets/images/Industrial-1920w.png" alt="">
+                                <h4 class="text-dark-custom fw-bold my-2">Industrial</h4>
+                            </div>
+                        </div>
+                    </h2>
+                    <div id="collapseIndustrial" class="accordion-collapse collapse" aria-labelledby="headingIndustrial"
+                        data-bs-parent="#accordionIndustrial">
+                        <div class="accordion-body h5 text-secondary">
+                            <p class="mb-3">Products intended for Industrial applications generally demand a higher
+                                level of
+                                robustness compared to consumer grade devices.</p>
+
+                            <p class="mb-3">Beta Solutions has experience in developing leading electronics products
+                                including
+                                specialist Industrial Fume Cupboard Controllers. Despite the harsh operating
+                                environments -
+                                these controllers have proven to work uninterrupted for several years.</p>
+
+                            <p class="mb-3">Whether your requirement is for industrial hardware or firmware or both, our
+                                engineering
+                                team have the specialist know-how and experience to deliver almost any solution.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item col py-3 rounded-0">
+                    <h2 class="accordion-header" id="headingInstrumentation">
+                        <div class="col-12 accordion-button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseInstrumentation" aria-expanded="false"
+                            aria-controls="collapseInstrumentation">
+                            <div class="col-12 text-center">
+
+                                <img src="./assets/images/Instrumentation-1920w.png" alt="">
+                                <h4 class="text-dark-custom fw-bold my-2">Instrumentation</h4>
+                            </div>
+                        </div>
+                    </h2>
+                    <div id="collapseInstrumentation" class="accordion-collapse collapse"
+                        aria-labelledby="headingInstrumentation" data-bs-parent="#accordionInstrumentation">
+                        <div class="accordion-body h5 text-secondary">
+                            <p class="mb-3">Scientific Instrumentation is required to help people better understand the
+                                world we
+                                live in. As technology continues to rapidly advance, Scientific Instrumentation is
+                                becoming
+                                smaller, cheaper and more powerful - enabling/empowering users to unlock possibilities
+                                that were
+                                otherwise impossible in the past.</p>
+
+                            <p class="mb-3">We have developed a High Speed Digital Transceiver for Nuclear Magnetic
+                                Resonance
+                                applications - which harnesses the power of advanced FPGA technology and
+                                signal-processing
+                                techniques.</p>
+
+                            <p class="mb-3">Beta Solutions has the experience and is passionate about developing
+                                Instrumentation with the latest up-to-date technology in mind - thereby giving our
+                                customer’s products a competitive edge.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item col py-3 rounded-0">
+                    <h2 class="accordion-header" id="headingIoT">
+                        <div class="col-12 accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseIoT"
+                            aria-expanded="false" aria-controls="collapseIoT">
+                            <div class="col-12 text-center">
+
+                                <img src="./assets/images/IoT-1920w.png" alt="">
+                                <h4 class="text-dark-custom fw-bold my-2">IoT</h4>
+                            </div>
+                        </div>
+                    </h2>
+                    <div id="collapseIoT" class="accordion-collapse collapse" aria-labelledby="headingIoT"
+                        data-bs-parent="#accordionIoT">
+                        <div class="accordion-body h5 text-secondary">
+                            <p class="mb-3">Due to an increasing demand for an “interconnected world”, by the year 2030
+                                it is
+                                predicted that 130,000,000,000 devices will be connected to the internet. This is often
+                                referred
+                                to as the “Internet of Things” or IoT.</p>
+
+                            <p class="mb-3">Our team of developers have developed many IoT based products including GPS
+                                tracking
+                                systems where the device’s location can be determined and then communicated back to the
+                                internet
+                                via LoRa (LP-WAN) based wireless technology. This technology has been used to improve
+                                asset
+                                management.</p>
+
+                            <p class="mb-3">We would love to talk to you about your IoT product idea and how we can
+                                help.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item col py-3 rounded-0">
+                    <h2 class="accordion-header" id="headingTransport">
+                        <div class="col-12 accordion-button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTransport" aria-expanded="false" aria-controls="collapseTransport">
+                            <div class="col-12 text-center">
+
+                                <img src="./assets/images/Transport-1920w.png" alt="">
+                                <h4 class="text-dark-custom fw-bold my-2">Transport</h4>
+                            </div>
+                        </div>
+                    </h2>
+                    <div id="collapseTransport" class="accordion-collapse collapse" aria-labelledby="headingTransport"
+                        data-bs-parent="#accordionTransport">
+                        <div class="accordion-body h5 text-secondary">
+                            <p class="mb-3">Innovative technology continues to be of tremendous value to transportation
+                                businesses - including saving time, money, and the environment while often
+                                simultaneously
+                                improving safety.</p>
+
+                            <p class="mb-3">We have developed a wide range of electronic products for the transport
+                                sector
+                                including Aviation Tracking systems. The device receives the aircraft’s GPS location
+                                coordinates, processes the information and then transmits the data back to land via the
+                                Iridium
+                                Satellite network.</p>
+
+                            <p class="mb-3">If you have a product idea that relates to the Transportation industry, do
+                                get in touch
+                                with Beta Solutions. We’d love to share with you how we can help.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item col py-3 rounded-0">
+                    <h2 class="accordion-header" id="headingResearch">
+                        <div class="col-12 accordion-button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseResearch" aria-expanded="false" aria-controls="collapseResearch">
+                            <div class="col-12 text-center">
+
+                                <img src="./assets/images/Research-1920w.png" alt="">
+                                <h4 class="text-dark-custom fw-bold my-2">Research</h4>
+                            </div>
+                        </div>
+                    </h2>
+                    <div id="collapseResearch" class="accordion-collapse collapse" aria-labelledby="headingResearch"
+                        data-bs-parent="#accordionResearch">
+                        <div class="accordion-body h5 text-secondary">
+                            <p class="mb-3">Research is at the heart of innovation and innovation is at the heart of
+                                progress.</p>
+
+                            <p class="mb-3">Since the company’s inception, Beta Solutions has been involved with
+                                Research
+                                oriented projects. We regularly undertake Feasibility Studies and Proof-of-concept
+                                Prototypes to
+                                help our clients efficiently and effectively assess new product ideas. As a result of
+                                our
+                                Research and Development, several of our clients have gone on to successfully patent the
+                                novel
+                                technology which has been designed.</p>
+
+                            <p class="mb-3">If you have a novel product idea involving electronics but don’t know where
+                                to start,
+                                talk to our experienced team who will be happy to help.</p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-            <ul class="nav nav-tabs row row-cols-1 row-cols-md-6 g-0 border-bottom-0" id="myTab" role="tablist">
-                <li class="nav-item col-md-2" role="presentation">
-                    <button class="nav-link p-3 col-12" id="Agritech-tab" data-bs-toggle="tab"
-                        data-bs-target="#Agritech" type="button" role="tab" aria-controls="Agritech"
-                        aria-selected="false">
-                        <div class="col-12 my-2">
-                            <img src="./assets/images/Agritech-1920w.PNG" alt="">
-                        </div>
-                        <div class="col-12 my-2 text-center">
-                            <h4 class="text-dark-custom fw-bold">Agritech</h4>
-                        </div>
-                    </button>
-                </li>
-                <li class="nav-item col-md-2" role="presentation">
-                    <button class="nav-link p-3 col-12" id="Assistive-Device-tab" data-bs-toggle="tab"
-                        data-bs-target="#Assistive-Device" type="button" role="tab" aria-controls="Assistive-Device"
-                        aria-selected="false">
-                        <div class="col-12 my-2">
-                            <img src="./assets/images/Assistive+Devices-1920w.png" alt="">
-                        </div>
-                        <div class="col-12 my-2 text-center">
-                            <h4 class="text-dark-custom fw-bold">Assistive Device</h4>
-                        </div>
-                    </button>
-                </li>
-                <li class="nav-item col-md-2" role="presentation">
-                    <button class="nav-link p-3 col-12" id="Consumer-tab" data-bs-toggle="tab"
-                        data-bs-target="#Consumer" type="button" role="tab" aria-controls="Consumer"
-                        aria-selected="false">
-                        <div class="col-12 my-2">
-                            <img src="./assets/images/Consumer-1920w.png" alt="">
-                        </div>
-                        <div class="col-12 my-2 text-center">
-                            <h4 class="text-dark-custom fw-bold">Assistive Device</h4>
-                        </div>
-                    </button>
-                </li>
-                <li class="nav-item col-md-2" role="presentation">
-                    <button class="nav-link p-3 col-12" id="Industrial-tab" data-bs-toggle="tab"
-                        data-bs-target="#Industrial" type="button" role="tab" aria-controls="Industrial"
-                        aria-selected="false">
-                        <div class="col-12 my-2">
-                            <img src="./assets/images/Industrial-1920w.png" alt="">
-                        </div>
-                        <div class="col-12 my-2 text-center">
-                            <h4 class="text-dark-custom fw-bold">Industrial</h4>
-                        </div>
-                    </button>
-                </li>
-                <li class="nav-item col-md-2" role="presentation">
-                    <button class="nav-link p-3 col-12" id="Instrumentation-tab" data-bs-toggle="tab"
-                        data-bs-target="#Instrumentation" type="button" role="tab" aria-controls="Instrumentation"
-                        aria-selected="false">
-                        <div class="col-12 my-2">
-                            <img src="./assets/images/Instrumentation-1920w.png" alt="">
-                        </div>
-                        <div class="col-12 my-2 text-center">
-                            <h4 class="text-dark-custom fw-bold">Instrumentation</h4>
-                        </div>
-                    </button>
-                </li>
-                <li class="nav-item col-md-2" role="presentation">
-                    <button class="nav-link p-3 col-12" id="IoT-tab" data-bs-toggle="tab" data-bs-target="#IoT"
-                        type="button" role="tab" aria-controls="IoT" aria-selected="false">
-                        <div class="col-12 my-2">
-                            <img src="./assets/images/IoT-1920w.png" alt="">
-                        </div>
-                        <div class="col-12 my-2 text-center">
-                            <h4 class="text-dark-custom fw-bold">IoT</h4>
-                        </div>
-                    </button>
-                </li>
-            </ul>
-            <div class="tab-content text-secondary" id="myTabContent">
-                <div class="tab-pane fade h4 p-3 py-lg-5" id="Agritech" role="tabpanel" aria-labelledby="Agritech-tab">
-                    <p class="mb-5">Agritech is the use of technology in agriculture for the purposes of improving
-                        economic, environmental or social factors.</p>
-
-
-                    <p class="mb-5"> We have designed IoT Fuel Monitoring Devices which intelligently sense and
-                        communicate the fuel volume within a storage tank. This data can be supplied to the fuel
-                        delivery companies who can (i) optimise their delivery routes and (ii) ensure the user never
-                        runs out of fuel.</p>
-
-
-                    <p class="mb-5"> Smart LED lighting arrays for horticulture; electric fence monitoring systems; and
-                        health & safety monitoring devices are just some of the other Agritech products we have
-                        developed for our clients.</p>
-
-
-                    <p class="">How can AgriTech benefit your business? Get in touch with us today to find out how Beta
-                        Solutions can turn your idea into a reality.</p>
-
-
-                </div>
-                <div class="tab-pane fade h4 p-3 py-lg-5" id="Assistive-Device" role="tabpanel"
-                    aria-labelledby="Assistive-Device-tab">
-                    <p class="mb-5">Assistive technology is a term that includes assistive, adaptive, and rehabilitative
-                        devices used for improving people's lives.</p>
-
-
-                    <p class="mb-5"> Beta Solutions is committed to harnessing the benefits of the latest technology and
-                        utilising it for developing tools for the purposes of improving people’s lives. We have
-                        developed a number of assistive devices over the years, including miniaturized motor controllers
-                        for prosthetic hands. </p>
-
-
-                    <p class="">Please contact a member of our development team to discuss how we can help unlock
-                        technological solutions for your Assistive Device needs.</p>
-
-
-                </div>
-                <div class="tab-pane fade h4 p-3 py-lg-5" id="Consumer" role="tabpanel" aria-labelledby="Consumer-tab">
-                    <p class="mb-5">Many of our clients choose to work with us because we have extensive experience
-                        developing products and working with technologies from a wide range of market segments that can
-                        apply to consumer products.</p>
-                    <p class="mb-5">For example, we have applied our Scientific Instrumentation skills and expertise in
-                        developing a fully certified consumer smart wall-switch product. While the product uses advanced
-                        behind-the-scenes complex signal processing, from the consumers’ perspective the product
-                        seamlessly connects to their Smartphone App to effortlessly control their household lighting.
-                    </p>
-
-                    <p class="">We can work with you to develop concepts, working prototypes and fully fledged consumer
-                        products that are ready for production.</p>
-
-
-                </div>
-                <div class="tab-pane fade h4 p-3 py-lg-5" id="Industrial" role="tabpanel"
-                    aria-labelledby="Industrial-tab">
-                    <p class="mb-5">Products intended for Industrial applications generally demand a higher level of
-                        robustness compared to consumer grade devices.</p>
-
-                    <p class="mb-5">Beta Solutions has experience in developing leading electronics products including
-                        specialist Industrial Fume Cupboard Controllers. Despite the harsh operating environments -
-                        these controllers have proven to work uninterrupted for several years.</p>
-
-                    <p class="">Whether your requirement is for industrial hardware or firmware or both, our engineering
-                        team have the specialist know-how and experience to deliver almost any solution.</p>
-
-
-                </div>
-                <div class="tab-pane fade h4 p-3 py-lg-5" id="Instrumentation" role="tabpanel"
-                    aria-labelledby="Instrumentation-tab">
-                    <p class="mb-5">Scientific Instrumentation is required to help people better understand the world we
-                        live in. As technology continues to rapidly advance, Scientific Instrumentation is becoming
-                        smaller, cheaper and more powerful - enabling/empowering users to unlock possibilities that were
-                        otherwise impossible in the past.</p>
-
-                    <p class="mb-5">We have developed a High Speed Digital Transceiver for Nuclear Magnetic Resonance
-                        applications - which harnesses the power of advanced FPGA technology and signal-processing
-                        techniques.</p>
-
-                    <p class="">Beta Solutions has the experience and is passionate about developing Instrumentation
-                        with the latest up-to-date technology in mind - thereby giving our customer’s products a
-                        competitive edge.</p>
-
-
-                </div>
-                <div class="tab-pane fade h4 p-3 py-lg-5" id="IoT" role="tabpanel" aria-labelledby="IoT-tab">
-                    <p class="mb-5">Due to an increasing demand for an “interconnected world”, by the year 2030 it is
-                        predicted that 130,000,000,000 devices will be connected to the internet. This is often referred
-                        to as the “Internet of Things” or IoT.</p>
-
-                    <p class="mb-5">Our team of developers have developed many IoT based products including GPS tracking
-                        systems where the device’s location can be determined and then communicated back to the internet
-                        via LoRa (LP-WAN) based wireless technology. This technology has been used to improve asset
-                        management.</p>
-
-                    <p class="">We would love to talk to you about your IoT product idea and how we can help.</p>
-
-
-                </div>
-            </div>
-
         </div>
-        <div class="col-12 mb-4">
-            <ul class="nav nav-tabs row row-cols-1 row-cols-md-6 g-0 border-bottom-0" id="myTab" role="tablist">
-                <li class="nav-item col-md-2" role="presentation">
-                    <button class="nav-link p-3 col-12" id="Transport-tab" data-bs-toggle="tab"
-                        data-bs-target="#Transport" type="button" role="tab" aria-controls="Transport"
-                        aria-selected="false">
-                        <div class="col-12 my-2">
-                            <img src="./assets/images/Transport-1920w.png" alt="">
-                        </div>
-                        <div class="col-12 my-2 text-center">
-                            <h4 class="text-dark-custom fw-bold">Transport</h4>
-                        </div>
-                    </button>
-                </li>
-                <li class="nav-item col-md-2" role="presentation">
-                    <button class="nav-link p-3 col-12" id="Research-tab" data-bs-toggle="tab"
-                        data-bs-target="#Research" type="button" role="tab" aria-controls="Research"
-                        aria-selected="false">
-                        <div class="col-12 my-2">
-                            <img src="./assets/images/Research-1920w.png" alt="">
-                        </div>
-                        <div class="col-12 my-2 text-center">
-                            <h4 class="text-dark-custom fw-bold">Research</h4>
-                        </div>
-                    </button>
-                </li>
-            </ul>
-            <div class="tab-content text-secondary" id="myTabContent">
-                <div class="tab-pane fade h4 p-3 py-lg-5" id="Transport" role="tabpanel"
-                    aria-labelledby="Transport-tab">
-                    <p class="mb-5">Innovative technology continues to be of tremendous value to transportation
-                        businesses - including saving time, money, and the environment while often simultaneously
-                        improving safety.</p>
 
-                    <p class="mb-5">We have developed a wide range of electronic products for the transport sector
-                        including Aviation Tracking systems. The device receives the aircraft’s GPS location
-                        coordinates, processes the information and then transmits the data back to land via the Iridium
-                        Satellite network.</p>
+        <!-- <ul class="nav nav-tabs row row-cols-1 row-cols-md-6 g-0 border-bottom-0" id="myTab" role="tablist">
+            <li class="nav-item col-md-2" role="presentation">
+                <button class="nav-link p-3 col-12" id="Agritech-tab" data-bs-toggle="tab" data-bs-target="#Agritech" type="button" role="tab" aria-controls="Agritech" aria-selected="false">
+                    <div class="col-12 my-2">
+                        <img src="./assets/images/Agritech-1920w.PNG" alt="">
+                    </div>
+                    <div class="col-12 my-2 text-center">
+                        <h4 class="text-dark-custom fw-bold">Agritech</h4>
+                    </div>
+                </button>
+            </li>
+            <li class="nav-item col-md-2" role="presentation">
+                <button class="nav-link p-3 col-12" id="Assistive-Device-tab" data-bs-toggle="tab" data-bs-target="#Assistive-Device" type="button" role="tab" aria-controls="Assistive-Device" aria-selected="false">
+                    <div class="col-12 my-2">
+                        <img src="./assets/images/Assistive+Devices-1920w.png" alt="">
+                    </div>
+                    <div class="col-12 my-2 text-center">
+                        <h4 class="text-dark-custom fw-bold">Assistive Device</h4>
+                    </div>
+                </button>
+            </li>
+            <li class="nav-item col-md-2" role="presentation">
+                <button class="nav-link p-3 col-12" id="Consumer-tab" data-bs-toggle="tab" data-bs-target="#Consumer" type="button" role="tab" aria-controls="Consumer" aria-selected="false">
+                    <div class="col-12 my-2">
+                        <img src="./assets/images/Consumer-1920w.png" alt="">
+                    </div>
+                    <div class="col-12 my-2 text-center">
+                        <h4 class="text-dark-custom fw-bold">Consumer</h4>
+                    </div>
+                </button>
+            </li>
+            <li class="nav-item col-md-2" role="presentation">
+                <button class="nav-link p-3 col-12" id="Industrial-tab" data-bs-toggle="tab" data-bs-target="#Industrial" type="button" role="tab" aria-controls="Industrial" aria-selected="false">
+                    <div class="col-12 my-2">
+                        <img src="./assets/images/Industrial-1920w.png" alt="">
+                    </div>
+                    <div class="col-12 my-2 text-center">
+                        <h4 class="text-dark-custom fw-bold">Industrial</h4>
+                    </div>
+                </button>
+            </li>
+            <li class="nav-item col-md-2" role="presentation">
+                <button class="nav-link p-3 col-12" id="Instrumentation-tab" data-bs-toggle="tab" data-bs-target="#Instrumentation" type="button" role="tab" aria-controls="Instrumentation" aria-selected="false">
+                    <div class="col-12 my-2">
+                        <img src="./assets/images/Instrumentation-1920w.png" alt="">
+                    </div>
+                    <div class="col-12 my-2 text-center">
+                        <h4 class="text-dark-custom fw-bold">Instrumentation</h4>
+                    </div>
+                </button>
+            </li>
+            <li class="nav-item col-md-2" role="presentation">
+                <button class="nav-link p-3 col-12" id="IoT-tab" data-bs-toggle="tab" data-bs-target="#IoT" type="button" role="tab" aria-controls="IoT" aria-selected="false">
+                    <div class="col-12 my-2">
+                        <img src="./assets/images/IoT-1920w.png" alt="">
+                    </div>
+                    <div class="col-12 my-2 text-center">
+                        <h4 class="text-dark-custom fw-bold">IoT</h4>
+                    </div>
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content text-secondary" id="myTabContent">
+            <div class="tab-pane fade h4 p-3 py-lg-5" id="Agritech" role="tabpanel" aria-labelledby="Agritech-tab">
+                <p class="mb-5">Agritech is the use of technology in agriculture for the purposes of improving
+                    economic, environmental or social factors.</p>
 
-                    <p class="">If you have a product idea that relates to the Transportation industry, do get in touch
-                        with Beta Solutions. We’d love to share with you how we can help.</p>
+
+                <p class="mb-5"> We have designed IoT Fuel Monitoring Devices which intelligently sense and
+                    communicate the fuel volume within a storage tank. This data can be supplied to the fuel
+                    delivery companies who can (i) optimise their delivery routes and (ii) ensure the user never
+                    runs out of fuel.</p>
 
 
-                </div>
-                <div class="tab-pane fade h4 p-3 py-lg-5" id="Research" role="tabpanel" aria-labelledby="Research-tab">
-                    <p class="mb-5">Research is at the heart of innovation and innovation is at the heart of progress.
-                    </p>
-
-                    <p class="mb-5">Since the company’s inception, Beta Solutions has been involved with Research
-                        oriented projects. We regularly undertake Feasibility Studies and Proof-of-concept Prototypes to
-                        help our clients efficiently and effectively assess new product ideas. As a result of our
-                        Research and Development, several of our clients have gone on to successfully patent the novel
-                        technology which has been designed.</p>
-
-                    <p class="">If you have a novel product idea involving electronics but don’t know where to start,
-                        talk to our experienced team who will be happy to help.</p>
+                <p class="mb-5"> Smart LED lighting arrays for horticulture; electric fence monitoring systems; and
+                    health & safety monitoring devices are just some of the other Agritech products we have
+                    developed for our clients.</p>
 
 
-                </div>
+                <p class="">How can AgriTech benefit your business? Get in touch with us today to find out how Beta
+                    Solutions can turn your idea into a reality.</p>
+
+
             </div>
+            <div class="tab-pane fade h4 p-3 py-lg-5" id="Assistive-Device" role="tabpanel" aria-labelledby="Assistive-Device-tab">
+                <p class="mb-5">Assistive technology is a term that includes assistive, adaptive, and rehabilitative
+                    devices used for improving people's lives.</p>
 
+
+                <p class="mb-5"> Beta Solutions is committed to harnessing the benefits of the latest technology and
+                    utilising it for developing tools for the purposes of improving people’s lives. We have
+                    developed a number of assistive devices over the years, including miniaturized motor controllers
+                    for prosthetic hands. </p>
+
+
+                <p class="">Please contact a member of our development team to discuss how we can help unlock
+                    technological solutions for your Assistive Device needs.</p>
+
+
+            </div>
+            <div class="tab-pane fade h4 p-3 py-lg-5" id="Consumer" role="tabpanel" aria-labelledby="Consumer-tab">
+                <p class="mb-5">Many of our clients choose to work with us because we have extensive experience
+                    developing products and working with technologies from a wide range of market segments that can
+                    apply to consumer products.</p>
+                <p class="mb-5">For example, we have applied our Scientific Instrumentation skills and expertise in
+                    developing a fully certified consumer smart wall-switch product. While the product uses advanced
+                    behind-the-scenes complex signal processing, from the consumers’ perspective the product
+                    seamlessly connects to their Smartphone App to effortlessly control their household lighting.
+                </p>
+
+                <p class="">We can work with you to develop concepts, working prototypes and fully fledged consumer
+                    products that are ready for production.</p>
+
+
+            </div>
+            <div class="tab-pane fade h4 p-3 py-lg-5" id="Industrial" role="tabpanel" aria-labelledby="Industrial-tab">
+                <p class="mb-5">Products intended for Industrial applications generally demand a higher level of
+                    robustness compared to consumer grade devices.</p>
+
+                <p class="mb-5">Beta Solutions has experience in developing leading electronics products including
+                    specialist Industrial Fume Cupboard Controllers. Despite the harsh operating environments -
+                    these controllers have proven to work uninterrupted for several years.</p>
+
+                <p class="">Whether your requirement is for industrial hardware or firmware or both, our engineering
+                    team have the specialist know-how and experience to deliver almost any solution.</p>
+
+
+            </div>
+            <div class="tab-pane fade h4 p-3 py-lg-5" id="Instrumentation" role="tabpanel" aria-labelledby="Instrumentation-tab">
+                <p class="mb-5">Scientific Instrumentation is required to help people better understand the world we
+                    live in. As technology continues to rapidly advance, Scientific Instrumentation is becoming
+                    smaller, cheaper and more powerful - enabling/empowering users to unlock possibilities that were
+                    otherwise impossible in the past.</p>
+
+                <p class="mb-5">We have developed a High Speed Digital Transceiver for Nuclear Magnetic Resonance
+                    applications - which harnesses the power of advanced FPGA technology and signal-processing
+                    techniques.</p>
+
+                <p class="">Beta Solutions has the experience and is passionate about developing Instrumentation with the latest up-to-date technology in mind - thereby giving our customer’s products a competitive edge.</p>
+
+
+            </div>
+            <div class="tab-pane fade h4 p-3 py-lg-5" id="IoT" role="tabpanel" aria-labelledby="IoT-tab">
+                <p class="mb-5">Due to an increasing demand for an “interconnected world”, by the year 2030 it is
+                    predicted that 130,000,000,000 devices will be connected to the internet. This is often referred
+                    to as the “Internet of Things” or IoT.</p>
+
+                <p class="mb-5">Our team of developers have developed many IoT based products including GPS tracking
+                    systems where the device’s location can be determined and then communicated back to the internet
+                    via LoRa (LP-WAN) based wireless technology. This technology has been used to improve asset
+                    management.</p>
+
+                <p class="">We would love to talk to you about your IoT product idea and how we can help.</p>
+
+
+            </div>
         </div>
+    <div class="col-12 mb-4">
+        <ul class="nav nav-tabs row row-cols-1 row-cols-md-6 g-0 border-bottom-0" id="myTab" role="tablist">
+            <li class="nav-item col-md-2" role="presentation">
+                <button class="nav-link p-3 col-12" id="Transport-tab" data-bs-toggle="tab" data-bs-target="#Transport" type="button" role="tab" aria-controls="Transport" aria-selected="false">
+                    <div class="col-12 my-2">
+                        <img src="./assets/images/Transport-1920w.png" alt="">
+                    </div>
+                    <div class="col-12 my-2 text-center">
+                        <h4 class="text-dark-custom fw-bold">Transport</h4>
+                    </div>
+                </button>
+            </li>
+            <li class="nav-item col-md-2" role="presentation">
+                <button class="nav-link p-3 col-12" id="Research-tab" data-bs-toggle="tab" data-bs-target="#Research" type="button" role="tab" aria-controls="Research" aria-selected="false">
+                    <div class="col-12 my-2">
+                        <img src="./assets/images/Research-1920w.png" alt="">
+                    </div>
+                    <div class="col-12 my-2 text-center">
+                        <h4 class="text-dark-custom fw-bold">Research</h4>
+                    </div>
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content text-secondary" id="myTabContent">
+            <div class="tab-pane fade h4 p-3 py-lg-5" id="Transport" role="tabpanel" aria-labelledby="Transport-tab">
+                <p class="mb-5">Innovative technology continues to be of tremendous value to transportation
+                    businesses - including saving time, money, and the environment while often simultaneously
+                    improving safety.</p>
+
+                <p class="mb-5">We have developed a wide range of electronic products for the transport sector
+                    including Aviation Tracking systems. The device receives the aircraft’s GPS location
+                    coordinates, processes the information and then transmits the data back to land via the Iridium
+                    Satellite network.</p>
+
+                <p class="">If you have a product idea that relates to the Transportation industry, do get in touch
+                    with Beta Solutions. We’d love to share with you how we can help.</p>
+
+
+            </div>
+            <div class="tab-pane fade h4 p-3 py-lg-5" id="Research" role="tabpanel" aria-labelledby="Research-tab">
+                <p class="mb-5">Research is at the heart of innovation and innovation is at the heart of progress.
+                </p>
+
+                <p class="mb-5">Since the company’s inception, Beta Solutions has been involved with Research
+                    oriented projects. We regularly undertake Feasibility Studies and Proof-of-concept Prototypes to
+                    help our clients efficiently and effectively assess new product ideas. As a result of our
+                    Research and Development, several of our clients have gone on to successfully patent the novel
+                    technology which has been designed.</p>
+
+                <p class="">If you have a novel product idea involving electronics but don’t know where to start,
+                    talk to our experienced team who will be happy to help.</p>
+
+
+            </div>
+        </div>
+
+    </div> -->
         <div class="col-12 mb-4 text-center">
             <a href="services" class="btn-lg btn-success-custom text-decoration-none py-3 px-5">See Our Capabilities</a>
         </div>
@@ -580,7 +809,7 @@
                 businesses.</p>
         </div>
         <div class="col-12 mb-5">
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme" id="owl-carousel-projects">
                 <div class="item">
                     <div class="card p-4 border-0 rounded-0">
                         <img src="./assets/images/Smart+Paint+Switch-1920w.png" class="card-img-top" alt="...">
@@ -602,12 +831,12 @@
     <!-- REVIEWS SECTION -->
     <div class="container-fluid p-lg-5 p-3">
 
-        <div class="col-12 mb-4">
+        <div class="col-12 mb-5">
             <p class="text-dark-custom display-6">See why our clients chose us</p>
         </div>
-        <div class="row row-cols-1 row-cols-lg-5">
-            <div class="col p-2">
-                <div class="card border-0 rounded-0 shadow py-3">
+        <div class="owl-carousel owl-theme" id="owl-carousel-reviews">
+            <div class="item py-5">
+                <div class="card border-0 rounded-0 shadow">
                     <div class="card-body min-h300">
                         <h4 class="card-title fw-bold m-0">
                             <a href="" class="text-decoration-none text-dark-custom">Pete Nelis</a>
@@ -624,8 +853,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col p-2">
-                <div class="card border-0 rounded-0 shadow py-3">
+            <div class="item py-5">
+                <div class="card border-0 rounded-0 shadow">
                     <div class="card-body min-h300">
                         <h4 class="card-title fw-bold m-0">
                             <a href="" class="text-decoration-none text-dark-custom">Ian Barker</a>
@@ -642,8 +871,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col p-2">
-                <div class="card border-0 rounded-0 shadow py-3">
+            <div class="item py-5">
+                <div class="card border-0 rounded-0 shadow">
                     <div class="card-body min-h300">
                         <h4 class="card-title fw-bold m-0">
                             <a href="" class="text-decoration-none text-dark-custom">Jonathan Higgs</a>
@@ -659,8 +888,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col p-2">
-                <div class="card border-0 rounded-0 shadow py-3">
+            <div class="item py-5">
+                <div class="card border-0 rounded-0 shadow">
                     <div class="card-body min-h300">
                         <h4 class="card-title fw-bold m-0">
                             <a href="" class="text-decoration-none text-dark-custom">Benoit Guieysse</a>
@@ -676,8 +905,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col p-2">
-                <div class="card border-0 rounded-0 shadow py-3">
+            <div class="item py-5">
+                <div class="card border-0 rounded-0 shadow">
                     <div class="card-body min-h300">
                         <h4 class="card-title fw-bold m-0">
                             <a href="" class="text-decoration-none text-dark-custom">Mike Redman</a>
@@ -695,9 +924,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 my-4 text-center">
+        <!-- <div class="col-12 my-4 text-center">
             <a href="projects" class="btn-success-custom text-decoration-none py-3 px-5">Read all Reviews</a>
-        </div>
+        </div> -->
     </div>
     <!-- REVIEWS SECTION -->
 
@@ -787,13 +1016,13 @@
     <!-- CONTENT -->
 
     <!-- BOTTOM HERO SECTION -->
-    <?php require_once('inc/bottom-hero-section.php')?>
+    <?php require_once('inc/bottom-hero-section.php') ?>
     <!-- BOTTOM HERO SECTION -->
 
     <!-- FOOTER SECTION -->
-    <?php require_once('inc/footer.php')?>
+    <?php require_once('inc/footer.php') ?>
     <!-- FOOTER SECTION -->
 
     <!-- SCRIPTS SECTION -->
-    <?php require_once('inc/bottom.php')?>
+    <?php require_once('inc/bottom.php') ?>
     <!-- SCRIPTS SECTION -->
