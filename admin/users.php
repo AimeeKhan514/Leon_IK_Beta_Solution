@@ -31,6 +31,7 @@ if(mysqli_num_rows($res)>0){
 ?>
                             <table class="table table-hover text-center">
                                 <thead class="text-primary">
+                                    <th>#sr</th>
                                     <th>ID</th>
                                     <th>Name</th>
                                     <th>Phone</th>
@@ -41,31 +42,35 @@ if(mysqli_num_rows($res)>0){
                                     <th>Email</th>
                                     <th>Message</th>
                                     <th>Hear About Us</th>
-                                    <th>Status</th>
                                     <th>Added On</th>
                                     <th>Action</th>
                                 </thead>
                                 <tbody>
                                 <?php
+                                $serial=1;
                                  while($row = mysqli_fetch_array($res)){
                                        ?>
                                     <tr>
+                                        <td><?php echo $serial;?></td>
                                         <td><?php echo $row["id"];?></td>
-                                        <td><?php echo $row["name"];?></td>
-                                        <td><?php echo $row["phone"];?></td>
-                                        <td><?php echo $row["company"];?></td>
-                                        <td><?php echo $row["country"];?></td>
-                                        <td><?php echo $row["pr"];?></td>
-                                        <td><?php echo $row["ct"];?></td>
-                                        <td><?php echo $row["email"];?></td>
-                                        <td><?php echo $row["message"];?></td>
-                                        <td><?php echo $row["hear_about_us"];?></td>
+                                        <td title = "<?php if($row["name"]!=""){ echo $row["name"];}else{ echo "Empty";}?>" rel = "tooltip" class = "  text-truncate btn-tooltip" tab-index="0" style = "max-width: 150px;"><?php if($row["name"]!=""){ echo $row["name"];}else{ echo "Empty";}?></td>
 
-                                        <td><?php if ($row["status"] == 1) {
-                                                        echo "<a href='?type=status&operation=deactive&id=" . $row['id'] . "'  class='btn btn-info btn-sm text-white' rel='tooltip' title='Click To Block User'>Unblocked</a>";
-                                                    } else {
-                                                        echo "<a href='?type=status&operation=active&id=" . $row['id'] . "' class='btn btn-warning btn-sm text-white' rel='tooltip' title='Click To Unblock'>Blocked</a>";
-                                                    } ?></td>
+        <td title = "<?php if($row["phone"]!=""){ echo $row["phone"];}else{ echo "Empty";}?>" rel = "tooltip" class = "  text-truncate btn-tooltip" tab-index="0" style = "max-width: 150px;"><?php if($row["phone"]!=""){ echo $row["phone"];}else{ echo "Empty";}?></td>
+
+                              <td title = "<?php if($row["company"]!=""){ echo $row["company"];}else{ echo "Empty";}?>" rel = "tooltip" class = "  text-truncate btn-tooltip" tab-index="0" style = "max-width: 150px;"><?php if($row["company"]!=""){ echo $row["company"];}else{ echo "Empty";}?></td>
+
+                              <td title = "<?php if($row["country"]!=""){ echo $row["country"];}else{ echo "Empty";}?>" rel = "tooltip" class = "  text-truncate btn-tooltip" tab-index="0" style = "max-width: 150px;"><?php if($row["country"]!=""){ echo $row["country"];}else{ echo "Empty";}?></td>
+
+                                  <td title = "<?php if($row["pr"]!=""){ echo $row["pr"];}else{ echo "Empty";}?>" rel = "tooltip" class = "  text-truncate btn-tooltip" tab-index="0" style = "max-width: 150px;"><?php if($row["pr"]!=""){ echo $row["pr"];}else{ echo "Empty";}?></td>
+
+                                  <td title = "<?php if($row["ct"]!=""){ echo $row["ct"];}else{ echo "Empty";}?>" rel = "tooltip" class = "  text-truncate btn-tooltip" tab-index="0" style = "max-width: 150px;"><?php if($row["ct"]!=""){ echo $row["ct"];}else{ echo "Empty";}?></td>
+
+                           <td title = "<?php if($row["email"]!=""){ echo $row["email"];}else{ echo "Empty";}?>" rel = "tooltip" class = "  text-truncate btn-tooltip" tab-index="0" style = "max-width: 150px;"><?php if($row["email"]!=""){ echo $row["email"];}else{ echo "Empty";}?></td>
+
+                                    
+                           <td title = "<?php if($row["message"]!=""){ echo $row["message"];}else{ echo "Empty";}?>" rel = "tooltip" class = "  text-truncate btn-tooltip" tab-index="0" style = "max-width: 150px;"><?php if($row["message"]!=""){ echo $row["message"];}else{ echo "Empty";}?></td>
+                           
+                           <td title = "<?php if($row["hear_about_us"]!=""){ echo $row["hear_about_us"];}else{ echo "Empty";}?>" rel = "tooltip" class = "  text-truncate btn-tooltip" tab-index="0" style = "max-width: 150px;"><?php if($row["hear_about_us"]!=""){ echo $row["hear_about_us"];}else{ echo "Empty";}?></td>
                                                                                                                                  <td><?php echo $row["added_on"];?></td>
                                         <td>
 

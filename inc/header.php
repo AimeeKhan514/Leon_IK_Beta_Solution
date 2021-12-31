@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php 
+<?php
+require_once("inc/config.php"); 
 $page_name = basename($_SERVER["PHP_SELF"],".php");
 ?>
 <head>

@@ -1,4 +1,35 @@
 <?php require_once('inc/header.php')?>
+<?php
+$msg = "";
+require_once("./inc/function.php");
+if(isset($_POST["btn_send"])){
+    $name = getSaveValue($con, $_POST["name"]);
+    $telephone = getSaveValue($con, $_POST["telephone"]);
+    $company = getSaveValue($con, $_POST["company"]);
+    $country = getSaveValue($con, $_POST["country"]);
+    $pr = getSaveValue($con, $_POST["pr"]);
+    $email = getSaveValue($con, $_POST["email"]);
+    $hear_about_us = getSaveValue($con, $_POST["hear_about_us"]);
+    $ct = getSaveValue($con, $_POST["ct"]);
+    $message = getSaveValue($con, $_POST["message"]);
+   $res =  mysqli_query($con, "INSERT INTO `users`(`name`, `phone`, `company`, `country`, `pr`, `ct`, `email`, `message`, `hear_about_us`, `status`) VALUES ('$name','$telephone','$company','$country','$pr','$ct','$email','$message','$hear_about_us','1')");
+    if($res){
+        $msg = '<div class="alert alert-success msg" role="alert">
+        <strong>Success!</strong> Message Send.!</div>';
+    }else{
+        $msg = '<div class="alert alert-warning msg" role="alert">
+        <strong>Warning!</strong> Message Not Send.!</div>';
+    }
+
+
+}
+
+if ( isset( $msg ) ) {
+    echo $msg;
+}
+
+
+?>
 
 
 <body>
@@ -403,6 +434,7 @@
     <?php require_once('inc/bottom.php')?>
     <!-- SCRIPTS SECTION -->
     <script>
+        $(".msg").fadeTo(2500, 500).fadeOut(3500);
     /*=========================
 BOOTSTRAP FORM VALIDATION
 =========================*/
