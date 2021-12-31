@@ -33,27 +33,40 @@ if(mysqli_num_rows($res)>0){
                                 <thead class="text-primary">
                                     <th>ID</th>
                                     <th>Name</th>
+                                    <th>Phone</th>
+                                    <th>Company</th>
+                                    <th>Country</th>
+                                    <th>Position/Role</th>
+                                    <th>City/Town</th>
                                     <th>Email</th>
-                                    <th>Password</th>
-                                    <th>Mobile</th>
+                                    <th>Message</th>
+                                    <th>Hear About Us</th>
                                     <th>Status</th>
+                                    <th>Added On</th>
                                     <th>Action</th>
                                 </thead>
                                 <tbody>
                                 <?php
-    while($row = mysqli_fetch_array($res)){
-?>
+                                 while($row = mysqli_fetch_array($res)){
+                                       ?>
                                     <tr>
                                         <td><?php echo $row["id"];?></td>
                                         <td><?php echo $row["name"];?></td>
-                                        <td><?php echo $row["email"];?></td>
-                                        <td><?php echo $row["password"];?></td>
                                         <td><?php echo $row["phone"];?></td>
+                                        <td><?php echo $row["company"];?></td>
+                                        <td><?php echo $row["country"];?></td>
+                                        <td><?php echo $row["pr"];?></td>
+                                        <td><?php echo $row["ct"];?></td>
+                                        <td><?php echo $row["email"];?></td>
+                                        <td><?php echo $row["message"];?></td>
+                                        <td><?php echo $row["hear_about_us"];?></td>
+
                                         <td><?php if ($row["status"] == 1) {
                                                         echo "<a href='?type=status&operation=deactive&id=" . $row['id'] . "'  class='btn btn-info btn-sm text-white' rel='tooltip' title='Click To Block User'>Unblocked</a>";
                                                     } else {
                                                         echo "<a href='?type=status&operation=active&id=" . $row['id'] . "' class='btn btn-warning btn-sm text-white' rel='tooltip' title='Click To Unblock'>Blocked</a>";
                                                     } ?></td>
+                                                                                                                                 <td><?php echo $row["added_on"];?></td>
                                         <td>
 
                                         <?php if (isset($_SESSION["ADMIN_ROLE"]) && $_SESSION["ADMIN_ROLE"] == "1") {

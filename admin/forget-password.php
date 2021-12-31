@@ -1,11 +1,10 @@
 <?php
-require("../inc/config.php");
-require_once("../inc/function.php");
+require("../inc/top-dashboard.php");
 $msg="";
 if(isset($_POST["btn_submit"])){
-   $email = get_safe_value($con,$_POST["email"]);
+   $email = getSaveValue($con,$_POST["email"]);
 if(empty($email)){
-    $msg="<div class='alert alert-danger top100px msg-login  text-center text-capitalize'>Please Enter Email..!</div>";
+    $msg="<div class='alert alert-danger msg'>Please Enter Email!</div>";
 }else{
     $sql = "SELECT * FROM `admin` WHERE `email`='$email'";
     $res = mysqli_query($con, $sql);
@@ -18,11 +17,11 @@ if(empty($email)){
         //$OTP = rand(111111,999999);
         //$_SESSION["OTP"]=$OTP;
         //mysqli_query($con,"UPDATE `users` SET `otp`='$OTP' WHERE `email`='$email' AND `id`='".$_SESSION['USER_ID']."'");
-        $_SESSION["msg"]="<div class='alert alert-success top100px msg-login  text-center text-capitalize'>Welcome..!&nbsp;&nbsp;<strong class='text-uppercase'>".$_SESSION['USER_NAME']."</strong><br>Please Reset Your Password..!</div>";
+        $_SESSION["msg"]="<div class='alert alert-success msg'>Welcome! <strong class='text-uppercase'>".$_SESSION['USER_NAME']."</strong><br>Please Reset Your Password!</div>";
         header("Location:password-verify");
     }
     else{
-        $msg="<div class='alert alert-danger top100px msg-login  text-center text-capitalize'>Please Enter Correct Email..!</div>";
+        $msg="<div class='alert alert-danger msg'>Please Enter Correct Email!</div>";
     }
 }
 }
@@ -30,15 +29,15 @@ if ( isset( $_SESSION["msg"] ) ) {
     echo $_SESSION["msg"];
     unset( $_SESSION["msg"] );
 }
-require("../inc/top-dashboard.php");
+
 ?>
 <body class="">
     <div class="container p-lg-5 p-3">
         <div class="col-md-6 offset-md-3 shadow p-lg-5 p-3 bg-light rounded">
             <?php echo $msg;?>
             <a href="index">
-                    <div class="img-container col-4 m-auto pt-3 pb-3 mb-3">
-                <img src="../img/logo.png" class="img-fluid" alt="">
+                    <div class="img-container col-6 m-auto pt-3 pb-3 mb-3">
+                <img src="../assets/images/Beta-Solutions-Logo.svg" class="img-fluid" alt="">
             </div>
             </a>
             <h1 class="h4 text-center">Forget Password</h1>

@@ -1,31 +1,27 @@
 <?php
-require( "../inc/config.php" );
-require( "../inc/function.php" );
 require( "../inc/top-dashboard.php" );
 $msg = "";
 if(isset($_SESSION["ADMIN_EMAIL"]) && $_SESSION["ADMIN_EMAIL"]!=""){
 if ( isset( $_POST["submit"] ) ) {
     $email = $_SESSION["ADMIN_EMAIL"];
-    $pass = get_safe_value( $con, $_POST["pass"] );
-    $repass = get_safe_value( $con, $_POST["repass"] );
+    $pass = getSaveValue( $con, $_POST["pass"] );
+    $repass = getSaveValue( $con, $_POST["repass"] );
     if ( isset( $pass ) && $pass != "" && isset( $repass ) && $repass != "" ) {
         if ( $pass == $repass ) {
             $update = mysqli_query( $con, "UPDATE `admin` SET `password`='".md5( $repass )."' WHERE `email`='$email'" );
             if ( $update ) {
-                $msg = "<div class='alert position-absolute top100px msg-login alert-success text-center text-capitalize'><strong class='text-uppercase'>Successful..! </strong> Your Password is reset<br>Please Login with New Password..!</div>";
+                $msg = "<div class='alert alert-success msg'><strong class='text-uppercase'>Successful! </strong> Your Password is reset<br>Please Login with New Password!</div>";
                 header( "Refresh:3; url=index" );
             } else {
-                $msg = "<div class='alert position-absolute top100px msg-login alert-danger text-center text-capitalize'>Error In Update..!</div>";
+                $msg = "<div class='alert alert-danger'>Error In Update!</div>";
             }
         } else {
-            $msg = "<div class='alert position-absolute top100px msg-login alert-danger text-center text-capitalize'>Password Does Not Matched..!</div>";
+            $msg = "<div class='alert alert-danger'>Password Does Not Matched!</div>";
         }
     } else {
-        $msg = "<div class='alert position-absolute top100px msg-login alert-warning text-center text-capitalize'>Please Fill out All The Fields..!</div>";
+        $msg = "<div class='alert alert-warning'>Please Fill out All The Fields!</div>";
     }
 }
-require( "../inc/top-dashboard.php" );
-
 echo $msg;
 if ( isset( $_SESSION["msg"] ) ) {
     echo $_SESSION["msg"];
@@ -38,7 +34,7 @@ if ( isset( $_SESSION["msg"] ) ) {
 
 <a href = "index">
 <div class = "img-container col-4 m-auto pt-3 pb-3 mb-3">
-<img src = "../img/logo.png" class = "img-fluid" alt = "">
+<img src = "../assets/images/Beta-Solutions-Logo.svg" class = "img-fluid" alt = "">
 </div>
 </a>
 <h1 class = "h4 text-center">Enter New Password</h1>

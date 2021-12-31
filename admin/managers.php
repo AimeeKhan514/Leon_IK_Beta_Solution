@@ -20,18 +20,7 @@ if ( isset( $msg ) ) {
 }
 $res = mysqli_query($con,$sql);
 ?>
-<!-- <div class="col-md-12 d-flex justify-content-end">
-    <form class="form-row" action="" method="post">
-        <div class="col-9 form-group  bmd-form-group">
-            <input type="text" class="form-control" placeholder="Search" name="search">
-            </div>
-            <div class="col-3">
-             <button type="submit" class="btn btn-white btn-raised btn-fab btn-round" name="btn-search">
-                    <i class="material-icons">search</i>
-                  </button>
-            </div>
-         </form>
-</div> -->
+
 <div class = "container-fluid px-0">
 <div class = "col-12 px-0">
 <div class = "card">
@@ -80,7 +69,7 @@ if(mysqli_num_rows($res)>0){
         }
         ?></td>
         
-        <td><img src = "../media/managers/<?php if(!empty($row["image"])){echo $row["image"];}else{ echo "user-image.png";}?>" alt = "<?php if(!empty($row["image"])){echo $row["image"];}else{ echo "user-image.png";}?>" title = "<?php if(!empty($row["image"])){echo $row["image"];}else{ echo "user-image.png";}?>" rel = "tooltip" style = "height: 60px; width:80px;"></td>
+        <td><img src = "../assets/media/managers/<?php if(!empty($row["image"])){echo $row["image"];}else{ echo "user-image.png";}?>" alt = "<?php if(!empty($row["image"])){echo $row["image"];}else{ echo "user-image.png";}?>" title = "<?php if(!empty($row["image"])){echo $row["image"];}else{ echo "user-image.png";}?>" rel = "tooltip" style = "height: 60px; width:80px;"></td>
         
         <td><?php if ( $row["status"] == 1 ) {
             echo "<a href='?type=status&operation=deactive&id=".$row['id']."'  class='btn btn-info btn-sm text-white' rel='tooltip' title='Click To Deactivate'>Active</a>";

@@ -11,12 +11,12 @@ $role = '';
 $status = '';
 $image = '';
 $msg = '';
-$image_required = "required";
+$required = "required";
 $add = "Add";
 $update = "Update";
 if ( isset( $_GET["id"] ) && $_GET["id"] != "" ) {
-    $image_required = "";
-    $id = get_safe_value( $con, $_GET["id"] );
+    $required = "";
+    $id = getSaveValue( $con, $_GET["id"] );
     $res = mysqli_query( $con, "SELECT * FROM `admin` WHERE `id`='$id'" );
     if ( mysqli_num_rows( $res )>0 ) {
         $row = mysqli_fetch_assoc( $res );
@@ -34,11 +34,11 @@ if ( isset( $_GET["id"] ) && $_GET["id"] != "" ) {
 }
 //DATA INSERT AND UPDATE CATEGORIES
 if ( isset( $_POST["submit"] ) ) {
-    $name = get_safe_value( $con, $_POST["name"] );
-    $email = get_safe_value( $con, $_POST["email"] );
-    $role = get_safe_value( $con, $_POST["role"] );
-    $password = get_safe_value( $con, $_POST["password"] );
-    $old_password = get_safe_value( $con, $_POST["old_pass"] );
+    $name = getSaveValue( $con, $_POST["name"] );
+    $email = getSaveValue( $con, $_POST["email"] );
+    $role = getSaveValue( $con, $_POST["role"] );
+    $password = getSaveValue( $con, $_POST["password"] );
+    $old_password = getSaveValue( $con, $_POST["old_pass"] );
     if ( empty( $password ) ) {
         $password = $old_password;
     } else {
@@ -47,35 +47,12 @@ if ( isset( $_POST["submit"] ) ) {
     if ( empty( $_FILES["image"]["name"] ) ) {
         $image = $_POST["old_image"];
     } else {
-        unlink('../media/managers/' . $image);
+        unlink('../assets/media/managers/' . $image);
         $image = rand( 111111111, 999999999 )."_".$_FILES["image"]["name"];
         $image = str_replace( " ", "_", $image );
-            move_uploaded_file( $_FILES["image"]["tmp_name"], '../media/managers/'.$image );
+        move_uploaded_file( $_FILES["image"]["tmp_name"], '../assets/media/managers/'.$image );
     }
 
-    //FOR UPDATE DATA FETCH FROM THE DB TO SHOW BEFORE EDIT
-    if ( isset( $_GET["id"] ) && $_GET["id"] != "" ) {
-        $res = mysqli_query( $con, "SELECT * FROM `admin` WHERE `id`='$id'" );
-        if ( mysqli_num_rows( $res )>0 ) {
-            $getdata = mysqli_fetch_array( $res );
-            if ( isset( $_POST["submit"] ) && $getdata["name"] == "$name" && $getdata["email"] == "$email" && $getdata["password"] == "$password" && $getdata["image"] == "$image" ) {
-                $_SESSION["msg"] = '<div class="alert alert-success msg" role="alert">
-                <strong>Success!</strong> Updated.</div>';
-            } else {
-                if ( $id == $getdata["id"] ) {
-                    mysqli_query( $con, "UPDATE `admin` SET `name`='$name',`email`='$email',`password`='$password',`image`='$image',`status`='1',`role`='$role' WHERE `id`='$id'" );
-                    $_SESSION["msg"] = '<div class="alert alert-success msg" role="alert">
-                    <strong>Success!</strong> Updated.</div>';
-                }
-            }
-            header( "location:managers" );
-            die();
-        } else {
-            $msg = '<div class="alert alert-warning msg" role="alert">
-            <strong>Warning!</strong> Already Exist.</div>';
-        }
-    }
-    if ( $msg == "" ) {
         //IF URL HAVE THE ID FOR UPADTE DATA
         if ( isset( $_GET["id"] ) && $_GET["id"] != "" ) {
             mysqli_query( $con, "UPDATE `admin` SET `name`='$name',`email`='$email',`password`='$password',`image`='$image',`status`='1',`role`='$role' WHERE `id`='$id'" );
@@ -98,7 +75,7 @@ if ( isset( $_POST["submit"] ) ) {
         }
         header( "location:managers" );
         die();
-    }
+    
 }
 ?>
 <div class = "wrapper">
@@ -132,7 +109,7 @@ if ( isset( $_SESSION["msg"] ) ) {
 <div class = "row">
 <div class = "col-md-6 p-3">
 <label for = "name">User Name</label>
-<input type = "text" class = "form-control" placeholder = "E.g. Ali Noor" name = "name" id = "name" value = "<?php echo $name;?>" required>
+<input type = "text" class = "form-control" placeholder = "E.g. John Doe" name = "name" id = "name" value = "<?php echo $name;?>" required>
 </div>
 <div class = "col-md-6 p-3">
 <label for = "email">Email address</label>
@@ -141,13 +118,13 @@ if ( isset( $_SESSION["msg"] ) ) {
 <div class = "col-md-6 p-3">
 <label for = "password">Password</label>
 <input type = "hidden" name = "old_pass" value = "<?php echo $password;?>">
-<input type = "password" class = "form-control" name = "password" id = "password" placeholder = "E.g. *******" <?php echo $image_required;
+<input type = "password" class = "form-control" name = "password" id = "password" placeholder = "E.g. Admin@123" <?php echo $required;
 ?>>
 </div>
 <div class = "col-md-6 p-3">
 <label for = "image">Image</label>
 <input type = "hidden" name = "old_image" value = "<?php echo $image;?>">
-<input type = "file" accept = "image/*" name = "image" id = "image" class = "form-control" <?php echo $image_required;
+<input type = "file" accept = "image/*" name = "image" id = "image" class = "form-control" <?php echo $required;
 ?>>
 </div>
 <div class = "col-md-6 p-3">
@@ -197,7 +174,7 @@ if ( isset( $_GET["id"] ) && $_GET["id"] != "" ) {
     <div class = "card card-profile">
     <div class = "card-avatar">
     <a href = "javascript:;">
-    <img class = "img" src = "../media/managers/<?php if(!empty($_SESSION["ADMIN_IMAGE"])){echo $_SESSION["ADMIN_IMAGE"];}else{ echo "user-image.png";}?>">
+    <img class = "img" src = "../assets/media/managers/<?php if(!empty($_SESSION["ADMIN_IMAGE"])){echo $_SESSION["ADMIN_IMAGE"];}else{ echo "user-image.png";}?>">
     </a>
     </div>
     <div class = "card-body">
@@ -224,7 +201,7 @@ if ( isset( $_GET["id"] ) && $_GET["id"] != "" ) {
     <div class = "card card-profile">
     <div class = "card-avatar">
     <a href = "javascript:;">
-    <img class = "img" src = "../media/managers/<?php if(!empty($image)){echo $image;}else{ echo "user-image.png";}?>">
+    <img class = "img" src = "../assets/media/managers/<?php if(!empty($image)){echo $image;}else{ echo "user-image.png";}?>">
     </a>
     </div>
     <div class = "card-body">
