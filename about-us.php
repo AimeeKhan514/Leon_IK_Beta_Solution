@@ -115,13 +115,23 @@
         <div class="col-12 py-3 text-center">
             <p class="text-dark-custom display-6">Meet Beta Solutions' problem solvers</p>
         </div>
+
         <div class="container mb-5">
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme" id="owl-carousel-teams">
+            <?php
+            $res = mysqli_query($con, "SELECT * FROM `teams` WHERE `status`='1'");
+            if (mysqli_num_rows($res) > 0) {
+                while ($row = mysqli_fetch_array($res)) {
+            ?>
                 <div class="item">
                     <div class="card p-4 border-0 rounded-0">
-                        <img src="./assets/images/Smart+Paint+Switch-1920w.png" class="card-img-top" alt="...">
+                        <img src="./assets/media/teams/<?php echo $row["image"];?>" class="card-img-top" alt="...">
                     </div>
                 </div>
+                <?php
+                }
+            }
+            ?>
             </div>
         </div>
 

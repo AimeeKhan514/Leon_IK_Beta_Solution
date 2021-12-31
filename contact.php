@@ -434,7 +434,7 @@ if ( isset( $msg ) ) {
     <?php require_once('inc/bottom.php')?>
     <!-- SCRIPTS SECTION -->
     <script>
-        $(".msg").fadeTo(2500, 500).fadeOut(3500);
+    $(".msg").fadeTo(2500, 500).fadeOut(3500);
     /*=========================
 BOOTSTRAP FORM VALIDATION
 =========================*/

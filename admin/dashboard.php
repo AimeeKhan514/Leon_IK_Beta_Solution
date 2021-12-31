@@ -28,14 +28,14 @@ if ( isset( $_SESSION["msg"] ) ) {
                  
                   
                         <div class="col-lg-4 col-md-6 col-sm-6">
-                            <a href="manage-products ">
+                            <a href="manage-clients ">
                                 <div class="card card-stats">
                                     <div class="card-header card-header-primary card-header-icon">
                                         <div class="card-icon">
-                                            <i class="material-icons">inventory_2</i>
+                                            <i class="material-icons">groups</i>
                                         </div>
                                         <p class="card-category">Add</p>
-                                        <h3 class="card-title">Product</h3>
+                                        <h3 class="card-title">Client</h3>
                                     </div>
                                     <div class="card-footer">
                                         <div class="stats">
@@ -46,14 +46,14 @@ if ( isset( $_SESSION["msg"] ) ) {
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
-                            <a href="manage-categories ">
+                            <a href="manage-engineering-consultancy ">
                                 <div class="card card-stats">
                                     <div class="card-header card-header-primary card-header-icon">
                                         <div class="card-icon">
-                                            <i class="material-icons">category</i>
+                                            <i class="material-icons">fact_check</i>
                                         </div>
                                         <p class="card-category">Add</p>
-                                        <h3 class="card-title">Category</h3>
+                                        <h3 class="card-title">Engineering Consult</h3>
                                     </div>
                                     <div class="card-footer">
                                         <div class="stats">
@@ -64,14 +64,14 @@ if ( isset( $_SESSION["msg"] ) ) {
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
-                            <a href="manage-sub-categories ">
+                            <a href="manage-industries ">
                                 <div class="card card-stats">
                                     <div class="card-header card-header-primary card-header-icon">
                                         <div class="card-icon">
-                                            <i class="material-icons">segment</i>
+                                            <i class="material-icons">apartment</i>
                                         </div>
                                         <p class="card-category">Add</p>
-                                        <h3 class="card-title">Sub Category</h3>
+                                        <h3 class="card-title">Industries</h3>
                                     </div>
                                     <div class="card-footer">
                                         <div class="stats">
@@ -81,66 +81,60 @@ if ( isset( $_SESSION["msg"] ) ) {
                                 </div>
                             </a>
                         </div>
-                        <?php
+                  
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <a href="manage-projects ">
+                                <div class="card card-stats">
+                                    <div class="card-header card-header-primary card-header-icon">
+                                        <div class="card-icon">
+                                            <i class="material-icons">work</i>
+                                        </div>
+                                        <p class="card-category">Add</p>
+                                        <h3 class="card-title">Projects</h3>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="stats">
+                                            <i class="material-icons">list</i> Check Results
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <a href="manage-reviews">
+                                <div class="card card-stats">
+                                    <div class="card-header card-header-primary card-header-icon">
+                                        <div class="card-icon">
+                                            <i class="material-icons">auto_graph</i>
+                                        </div>
+                                        <p class="card-category">Add</p>
+                                        <h3 class="card-title">Reviews</h3>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="stats">
+                                            <i class="material-icons">list</i> Check Results
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <a href="manage-teams">
+                                <div class="card card-stats">
+                                    <div class="card-header card-header-primary card-header-icon">
+                                        <div class="card-icon">
+                                            <i class="material-icons">group_work</i>
+                                        </div>
+                                        <p class="card-category">Add</p>
+                                        <h3 class="card-title">Teams</h3>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="stats">
+                                            <i class="material-icons">list</i> Check Results
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
-
-if (isset($_SESSION["ADMIN_ROLE"]) && $_SESSION["ADMIN_ROLE"] == "1") {
-?>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <a href="manage-floating-news ">
-                                <div class="card card-stats">
-                                    <div class="card-header card-header-primary card-header-icon">
-                                        <div class="card-icon">
-                                            <i class="material-icons">compare_arrows</i>
-                                        </div>
-                                        <p class="card-category">Add News</p>
-                                        <h3 class="card-title">Floating</h3>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="stats">
-                                            <i class="material-icons">list</i> Check Results
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <a href="manage-slider">
-                                <div class="card card-stats">
-                                    <div class="card-header card-header-primary card-header-icon">
-                                        <div class="card-icon">
-                                            <i class="material-icons">view_array</i>
-                                        </div>
-                                        <p class="card-category">Add Slider</p>
-                                        <h3 class="card-title">Sliders</h3>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="stats">
-                                            <i class="material-icons">list</i> Check Results
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <a href="managers">
-                                <div class="card card-stats">
-                                    <div class="card-header card-header-primary card-header-icon">
-                                        <div class="card-icon">
-                                            <i class="material-icons">recent_actors</i>
-                                        </div>
-                                        <p class="card-category">Site</p>
-                                        <h3 class="card-title">Managers</h3>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="stats">
-                                            <i class="material-icons">list</i> Check Results
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <?php
-}
-?>
                         <?php require( "../inc/footer-dashboard.php" )?>
