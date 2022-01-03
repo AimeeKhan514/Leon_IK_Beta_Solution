@@ -2,6 +2,7 @@
 <html lang="en">
 <?php
 require_once("inc/config.php"); 
+require_once("inc/function.php"); 
 $page_name = basename($_SERVER["PHP_SELF"],".php");
 ?>
 <head>

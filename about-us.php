@@ -119,9 +119,8 @@
         <div class="container mb-5">
             <div class="owl-carousel owl-theme" id="owl-carousel-teams">
             <?php
-            $res = mysqli_query($con, "SELECT * FROM `teams` WHERE `status`='1'");
-            if (mysqli_num_rows($res) > 0) {
-                while ($row = mysqli_fetch_array($res)) {
+               $getTableData = getTableData($con, 'teams', '');
+               foreach($getTableData as $row){
             ?>
                 <div class="item">
                     <div class="card p-4 border-0 rounded-0">
@@ -130,7 +129,7 @@
                 </div>
                 <?php
                 }
-            }
+            
             ?>
             </div>
         </div>

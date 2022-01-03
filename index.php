@@ -1,6 +1,5 @@
 <?php require_once('inc/header.php') ?>
 
-
 <body>
     <!-- NAVBAR -->
     <?php require_once('inc/navbar.php') ?>
@@ -48,9 +47,8 @@
                 <div class="col-lg-6 mb-3 pe-md-3">
                     <div class="accordion" id="accordionExample">
                         <?php
-                        $res = mysqli_query($con, "SELECT * FROM `engineering_consultancy` WHERE `status`='1'");
-                        if (mysqli_num_rows($res) > 0) {
-                            while ($row = mysqli_fetch_array($res)) {
+                        $getTableData = getTableData($con, 'engineering_consultancy', '');
+                        foreach($getTableData as $row){
                         ?>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="heading<?php echo $row["id"] ?>">
@@ -67,7 +65,7 @@
                                 </div>
                         <?php
                             }
-                        }
+                        
                         ?>
                     </div>
                 </div>
@@ -98,9 +96,8 @@
         <div class="col-12 mb-4">
             <div class="accordion row row-cols-lg-4 row-cols-md-3 row-cols-1" id="accordionIndustries">
                 <?php
-                $res = mysqli_query($con, "SELECT * FROM `industries` WHERE `status`='1'");
-                if (mysqli_num_rows($res) > 0) {
-                    while ($row = mysqli_fetch_array($res)) {
+                    $getTableData = getTableData($con, 'industries', '');
+                    foreach($getTableData as $row){
                 ?>
                         <div class="accordion-item col py-3 rounded-0">
                             <h2 class="accordion-header" id="heading0<?php echo $row["id"] ?>">
@@ -119,7 +116,6 @@
                         </div>
                 <?php
                     }
-                }
                 ?>
 
             </div>
@@ -244,9 +240,8 @@
         <div class="col-12 mb-5">
             <div class="owl-carousel owl-theme" id="owl-carousel-projects">
                 <?php
-                $res = mysqli_query($con, "SELECT * FROM `projects` WHERE `status`='1'");
-                if (mysqli_num_rows($res) > 0) {
-                    while ($row = mysqli_fetch_array($res)) {
+                $getTableData = getTableData($con, 'projects', '');
+                foreach($getTableData as $row){
                 ?>
                         <div class="item">
                             <div class="card p-4 border-0 rounded-0" style="min-height: 450px;">
@@ -259,7 +254,7 @@
                         </div>
                 <?php
                     }
-                }
+                
                 ?>
             </div>
         </div>
@@ -278,9 +273,8 @@
         </div>
         <div class="owl-carousel owl-theme" id="owl-carousel-reviews">
             <?php
-            $res = mysqli_query($con, "SELECT * FROM `reviews` WHERE `status`='1'");
-            if (mysqli_num_rows($res) > 0) {
-                while ($row = mysqli_fetch_array($res)) {
+                $getTableData = getTableData($con, 'reviews', '');
+                foreach($getTableData as $row){
             ?>
                     <div class="item py-5">
                         <div class="card border-0 rounded-0 shadow">
@@ -311,8 +305,7 @@
                     </div>
             <?php
                 }
-            }
-            ?>
+           ?>
         </div>
         <!-- <div class="col-12 my-4 text-center">
             <a href="projects" class="btn-success-custom text-decoration-none py-3 px-5">Read all Reviews</a>
@@ -322,22 +315,19 @@
 
     <!-- CLIENTS SECTION -->
     <div class="container-fluid p-lg-5 p-3">
-
         <div class="col-12 mb-4">
             <p class="text-dark-custom display-6">Our Clients</p>
         </div>
         <div class="row">
             <?php
-            $res = mysqli_query($con, "SELECT * FROM `clients` WHERE `status`='1'");
-            if (mysqli_num_rows($res) > 0) {
-                while ($row = mysqli_fetch_array($res)) {
+               $getTableData = getTableData($con, 'clients', '');
+               foreach($getTableData as $row){
             ?>
                     <a href="./assets/media/clients/<?php echo $row["image"];?>" class="col-lg-2 col-md-4 p-3 mb-3" data-toggle="lightbox" data-gallery="example-gallery">
                         <img src="./assets/media/clients/<?php echo $row["image"]; ?>" class="img-fluid" alt="">
                     </a>
             <?php
                 }
-            }
             ?>
         </div>
     </div>
